@@ -8,6 +8,6 @@ ham.addEventListener("click", function () {
 	}
 	else {
 		navLinks.style.maxHeight = navLinks.scrollHeight + "px";
-		ham.style.width = "20px";
+		ham.style.width = "21px";
 	}
 })
