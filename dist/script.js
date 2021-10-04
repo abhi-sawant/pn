@@ -1,2 +1,2 @@
-"use strict";console.log("HELLO");var test=function(){console.log("this is a test")};
+"use strict";var ham=document.getElementById("hamburger"),navLinks=document.getElementById("navLinks");ham.addEventListener("click",(function(){navLinks.style.maxHeight?(navLinks.style.maxHeight=null,ham.style.width="25px"):(navLinks.style.maxHeight=navLinks.scrollHeight+"px",ham.style.width="20px")}));
 //# sourceMappingURL=script.js.map

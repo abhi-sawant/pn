@@ -1,0 +1,84 @@
+@use "../util" as *;
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "ham logo ."
+        "link link link";
+    align-items: center;
+    padding: 0.5em 1em;
+    .hamburger {
+        grid-area: ham;
+        width: 25px;
+        height: 3px;
+        background: var(--title-text);
+        border-radius: 100px;
+        transition: all 250ms;
+        &::after,
+        &::before {
+            display: block;
+            content: "";
+            background: var(--title-text);
+            height: 3px;
+            border-radius: 100px;
+            width: 115%;
+            transition: all 250ms;
+        }
+        &::after {
+            transform: translateY(-11px);
+        }
+        &::before {
+            transform: translateY(8px);
+        }
+    }
+    .nav-logo {
+        grid-area: logo;
+    }
+    .nav-links {
+        display: block;
+        grid-area: link;
+        list-style-type: none;
+        text-align: center;
+        padding-left: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 250ms;
+        margin-bottom: -0.5rem;
+        .nav__link {
+            color: var(--blue);
+            font-weight: 600;
+            padding: 0.5em 0;
+            display: block;
+            border-bottom: 1px solid hsla(201, 100%, 47%, 0.2);;
+        }
+    }
+    @include breakpoint(medium) {
+        grid-template-areas:
+            ". logo ."
+            "link link link";
+            .nav-logo {
+                text-align: center;
+                img {
+                    width: 50%;
+                    margin: auto;
+                }
+            }
+        .hamburger {
+            display: none;
+        }
+        .nav-links {
+            max-height: 1000px;
+            margin-bottom: 0.5em;
+            .nav__link {
+                display: inline-block;
+                margin: 0.2rem 0.5rem;
+            }
+        }
+    }
+    @include breakpoint(large) {
+        .navbar {
+            display: flex;
+        }
+    }
+}
