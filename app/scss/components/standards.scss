@@ -1,0 +1,50 @@
+@use "../util" as *;
+
+.standards {
+    padding: 2em 0;
+    .standards__title {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 1em;
+        color: var(--blue);
+    }
+    .standards__description {
+        margin: auto;
+        margin-block: 1em;
+        text-align: center;
+    }
+    .standards__container {
+        .standards__standard {
+            margin-inline: 1em;
+            margin-block: 0.5em;
+            border: 1px solid rgba(20,20,20,0.1);
+            .standard__image {
+                padding: 3em 1em;
+                background-image: linear-gradient(to bottom, var(--blue), var(--light-blue));
+                color: white;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                text-align: center;
+            }
+            .standard__name {
+                margin-block: 0.8em;
+                font-weight: 700;
+                margin-left: 0.5em;
+            }
+            .standard__read {
+                background: var(--blue);
+                color: white;
+                font-weight: 700;
+                display: inline-block;
+                padding: 0.5em 1em;
+                margin-bottom: 1em;
+                margin-left: 0.5em;
+                &:hover {
+                    background: var(--light-blue);
+                }
+            }
+        }
+    }
+}

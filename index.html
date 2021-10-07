@@ -50,12 +50,65 @@
 		<img src="assets/images/03.jpg" alt="">
 		<img src="assets/images/04.jpg" alt="">
 	</section>
+
 	<section class="tag-line">
 		<div class="container tag-line__container">
 			<div class="tag">EVERY <b> ARJUNA </b> NEEDS A <b> DRONACHARYA </b> WHEN YOUR FUTURE IS CHALLENGING. <b> ITS
 					YOUR CALL NOW.</b> </div>
-					<div class="col">
-			<a href="" class="join-button">Join PN</a><span class="join-button">></span></div>
+			<div class="col">
+				<a href="" class="join-button">Join PN</a><span class="join-button">></span>
+			</div>
+		</div>
+	</section>
+
+	<section class="standards">
+		<h2 class="standards__title">Standard We Teach</h2>
+		<p class="container standards__description">PN Institute is an established name in IIT | JEE | NEET |
+			FOUNDATION |
+			BOARD preparation,
+			guiding students of 6 | 7 | 8 | 9 | 10 | 11 – 12 A & B Group Science since 2012. At Phoenix, We empower our
+			students.</p>
+		<div class="container standards__container">
+			<div class="standards__standard">
+				<p class="standard__image">Class 5</p>
+				<p class="standard__name">Class V</p>
+				<span class="standard__read">Read More</span>
+			</div>
+			<div class="standards__standard">
+				<p class="standard__image">Class 6</p>
+				<p class="standard__name">Class VI</p>
+				<span class="standard__read">Read More</span>
+			</div>
+			<div class="standards__standard">
+				<p class="standard__image">Class 7</p>
+				<p class="standard__name">Class VII</p>
+				<span class="standard__read">Read More</span>
+			</div>
+			<div class="standards__standard">
+				<p class="standard__image">Class 8</p>
+				<p class="standard__name">Class VIII</p>
+				<span class="standard__read">Read More</span>
+			</div>
+			<div class="standards__standard">
+				<p class="standard__image">Class 9</p>
+				<p class="standard__name">Class IX</p>
+				<span class="standard__read">Read More</span>
+			</div>
+			<div class="standards__standard">
+				<p class="standard__image">Class 10</p>
+				<p class="standard__name">Class X</p>
+				<span class="standard__read">Read More</span>
+			</div>
+			<div class="standards__standard">
+				<p class="standard__image">Class 11</p>
+				<p class="standard__name">Class XI</p>
+				<span class="standard__read">Read More</span>
+			</div>
+			<div class="standards__standard">
+				<p class="standard__image">Class 12</p>
+				<p class="standard__name">Class XII</p>
+				<span class="standard__read">Read More</span>
+			</div>
 		</div>
 	</section>
 
@@ -78,6 +131,45 @@
 				speed: 300,
 				slidesToShow: 1,
 				adaptiveHeight: true
+			});
+
+		});
+
+		$(document).ready(function () {
+			$('.standards__container').slick({
+				dots: false,
+				arrows: false,
+				autoplay: true,
+				infinite: true,
+				speed: 300,
+				slidesToShow: 4,
+				adaptiveHeight: true,
+				responsive: [
+					{
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 3,
+						}
+					},
+					{
+						breakpoint: 600,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+					// You can unslick at a given breakpoint now by adding:
+					// settings: "unslick"
+					// instead of a settings object
+				]
 			});
 
 		});
