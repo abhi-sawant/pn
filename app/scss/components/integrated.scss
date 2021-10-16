@@ -1,0 +1,46 @@
+@use "../util" as *;
+
+.integrated {
+    .integrated__container {
+        .integrated__courses {
+            .integrated__course {
+                margin: 2em auto;
+                .course__title {
+                    font-weight: 600;
+                    margin: 0.5em auto;
+                    width: 90%;
+                }
+                .course__description {
+                    margin: 0.5em auto;
+                    width: 90%;
+                }
+                .double-button {
+                    text-align: center;
+                    background: var(--blue);
+                    color: white;
+                    font-weight: 700;
+                    // display: inline-block;
+                    padding: 0.5em 1em;
+                    margin-bottom: 1em;
+                    margin-left: 0.5em;
+                    &:hover {
+                        background: var(--light-blue);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(medium) {
+    .integrated__container {
+        .integrated__courses {
+            display: flex;
+            gap: 1em;
+            .integrated__course {
+                align-self: stretch;
+                width: 100%;
+            }
+        }
+    }
+}
