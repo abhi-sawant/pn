@@ -21,6 +21,7 @@
             font-weight: 600;
             padding: 0.5em 1em;
             margin-top: 1em;
+            border-radius: 5px 0px 0px 5px;
             &:hover {
                 color: var(--red);
             }
@@ -28,6 +29,7 @@
         span.join-button {
             background: var(--red);
             color: white;
+            border-radius: 0px 5px 5px 0px;
             &:hover {
                 color: var(--light-blue);
             }
