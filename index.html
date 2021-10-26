@@ -5,7 +5,8 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>PN Institute</title>
-	<link rel="stylesheet" href="dist/slick.css">
+	<link rel="stylesheet" href="dist/slick.css" />
+	<link rel="stylesheet" href="dist/aos.css" />
 	<link rel="stylesheet" href="dist/style.css" />
 </head>
 
@@ -51,18 +52,8 @@
 		<img src="assets/images/04.jpg" alt="">
 	</section>
 
-	<section class="tag-line">
-		<div class="container tag-line__container">
-			<div class="tag">EVERY <b> ARJUNA </b> NEEDS A <b> DRONACHARYA </b> WHEN YOUR FUTURE IS CHALLENGING. <b> ITS
-					YOUR CALL NOW.</b> </div>
-			<div class="col">
-				<a href="" class="join-button">Join PN</a><span class="join-button">></span>
-			</div>
-		</div>
-	</section>
-
-	<section class="standards">
-		<h2 class="standards__title">Standard We Teach</h2>
+	<section class="standards" data-aos="fade-up">
+		<h2 class="standards__title section__title">Standards We Teach</h2>
 		<p class="container standards__description">PN Institute is an established name in IIT | JEE | NEET |
 			FOUNDATION |
 			BOARD preparation,
@@ -112,15 +103,25 @@
 		</div>
 	</section>
 
+	<section class="tag-line" data-aos="fade-up">
+		<div class="container tag-line__container">
+			<div class="tag" data-aos="fade-up">EVERY <b> ARJUNA </b> NEEDS A <b> DRONACHARYA </b> WHEN YOUR FUTURE IS CHALLENGING. <b> ITS
+					YOUR CALL NOW.</b> </div>
+			<div class="col" data-aos="fade-up">
+				<a href="" class="join-button">Join PN</a><span class="join-button">></span>
+			</div>
+		</div>
+	</section>
+
 	<section class="integrated">
 		<div class="container integrated__container">
-			<h2 class="section__title">Intergrated Classroom Programs</h2>
-			<p class="section__description">We Phoenix Institute providing the students of 6 to 10 | 11th and 12th
+			<h2 class="section__title" data-aos="fade-up">Intergrated Classroom Programs</h2>
+			<p class="section__description" data-aos="fade-up">We Phoenix Institute providing the students of 6 to 10 | 11th and 12th
 				(Sci.) both the Board’s exams’
 				education and also the teaching for the competitive exams like JEE / NEET / GUJCET at the same place.
 			</p>
 			<div class="integrated__courses">
-				<div class="integrated__course">
+				<div class="integrated__course" data-aos="fade-right">
 					<img src="assets/images/courses/hm_iit_1.jpg" alt="" class="course__image">
 					<p class="course__title">Target NTSE/OLYMPIAD/FOUNDATION (6 to 10th) - 5 Years</p>
 					<p class="course__description">This course is designed for the students moving
@@ -129,7 +130,7 @@
 						<span class="read-more">Read more</span>
 					</div>
 				</div>
-				<div class="integrated__course">
+				<div class="integrated__course" data-aos="fade-up">
 					<img src="assets/images/courses/hm_neet_2.jpg" alt="" class="course__image">
 					<p class="course__title">Target IIT/NIT (11th Maths Group) - 2 Years</p>
 					<p class="course__description">This course designed for the students aspiring for
@@ -138,7 +139,7 @@
 						<span class="read-more">Read more</span>
 					</div>
 				</div>
-				<div class="integrated__course">
+				<div class="integrated__course" data-aos="fade-left">
 					<img src="assets/images/courses/hm_olympiad_3.jpg" alt="" class="course__image">
 					<p class="course__title">Target NEET (11th Biology Group) - 2 years</p>
 					<p class="course__description">This course specially designed for the students willing ro appear for
@@ -153,8 +154,8 @@
 
 	<section class="registration">
 		<div class="container registration__container">
-			<div class="registration-flex">
-				<h2 class="section__title">Register Now</h2>
+			<div class="registration-flex" data-aos="fade-right">
+				<h2 class="reg__title">Register Now</h2>
 				<h3 class="section__description">Best Institute in Vadodara</h3>
 				<ul class="benefits">
 					<li class="benefit">PN Institute Benefit</li>
@@ -164,7 +165,7 @@
 					<li class="benefit">PN Institute Benefit</li>
 				</ul>
 			</div>
-			<form action="" class="registration-form">
+			<form action="" class="registration-form" data-aos="fade-left">
 				<h2 class="section__title">Enroll Now</h2>
 				<input type="text" class="form-name" id="form-name" placeholder="Name">
 				<input type="text" class="form-email" id="form-email" placeholder="Email">
@@ -192,61 +193,12 @@
 	<script src="dist/jquery.min.js"></script>
 	<script src="dist/jquery-migrate.min.js"></script>
 	<script src="dist/slick.min.js"></script>
-	<script src="dist/script.js"></script>
-
+	<script src="dist/slick-slide.js"></script>
+	<script src="dist/aos.js"></script>
 	<script>
-		$(document).ready(function () {
-			$('.hero').slick({
-				dots: false,
-				arrows: false,
-				autoplay: true,
-				infinite: true,
-				speed: 300,
-				slidesToShow: 1,
-				adaptiveHeight: true
-			});
-
-		});
-
-		$(document).ready(function () {
-			$('.standards__container').slick({
-				dots: false,
-				arrows: false,
-				autoplay: true,
-				infinite: true,
-				speed: 300,
-				slidesToShow: 4,
-				adaptiveHeight: true,
-				responsive: [
-					{
-						breakpoint: 1024,
-						settings: {
-							slidesToShow: 3,
-							slidesToScroll: 3,
-						}
-					},
-					{
-						breakpoint: 600,
-						settings: {
-							slidesToShow: 2,
-							slidesToScroll: 2
-						}
-					},
-					{
-						breakpoint: 480,
-						settings: {
-							slidesToShow: 1,
-							slidesToScroll: 1
-						}
-					}
-					// You can unslick at a given breakpoint now by adding:
-					// settings: "unslick"
-					// instead of a settings object
-				]
-			});
-
-		});
+		AOS.init();
 	</script>
+	<script src="dist/script.js"></script>
 </body>
 
 </html>

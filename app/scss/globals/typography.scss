@@ -18,7 +18,23 @@ a:active {
 	font-weight: 600;
 	text-align: center;
 	margin: 0 1em;
-	color: var(--blue);
+	// color: var(--blue);
+	background: linear-gradient(to left, hsl(201, 100%, 50%), hsl(207, 100%, 30%));
+	background-size: 200% auto;
+	color: red;
+	background-clip: text;
+	// text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: shine 4s linear infinite;
+	@keyframes shine {
+		to {
+			background-position: 200% center;
+		}
+	}
+	@include breakpoint(medium) {
+		font-size: 3em;
+	}
 }
 
 .section__description {

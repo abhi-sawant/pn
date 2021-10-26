@@ -8,6 +8,9 @@
         text-align: center;
         margin: 0 1em;
         color: var(--blue);
+        @include breakpoint(medium) {
+            font-size: 3em;
+        }
     }
     .standards__description {
         margin: auto;

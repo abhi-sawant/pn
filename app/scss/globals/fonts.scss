@@ -1,14 +1,45 @@
 // @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 @font-face {
-	font-family: 'Inter', sans-serif;
+	font-family: "Inter", sans-serif;
 	src: url(../assets/font/Inter-VariableFont.ttf);
 }
 
-:root {
-	--font-body: 'Inter', sans-serif;
+@font-face {
+	font-family: "Poppins", sans-serif;
+	src: url("../assets/font/poppins-regular.woff") format("woff");
+	font-weight: 400;
 }
 
-html, body {
+@font-face {
+	font-family: "Poppins", sans-serif;
+	src: url("../assets/font/poppins-medium.woff") format("woff");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Poppins", sans-serif;
+	src: url("../assets/font/poppins-semibold.woff") format("woff");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Poppins", sans-serif;
+	src: url("../assets/font/poppins-bold.woff") format("woff");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Poppins", sans-serif;
+	src: url("../assets/font/poppins-extrabold.woff") format("woff");
+	font-weight: 800;
+}
+
+:root {
+	--font-body: "Poppins", sans-serif;
+}
+
+html,
+body {
 	font-family: var(--font-body);
 }
