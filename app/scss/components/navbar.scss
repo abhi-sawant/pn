@@ -50,7 +50,13 @@
             font-weight: 600;
             padding: 0.5em 0;
             display: block;
-            border-bottom: 1px solid hsla(201, 100%, 47%, 0.2);;
+            border-bottom: 1px solid hsla(201, 100%, 47%, 0.2);
+            transition: all 250ms;
+            &:hover {
+                color: var(--red);
+                border-bottom: 1px solid var(--red);
+                transition: all 250ms;
+            }
         }
     }
     @include breakpoint(medium) {

@@ -3,6 +3,7 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	transition: all 250ms;
 }
 
 /* Remove default margin */
@@ -30,11 +31,16 @@ html:focus-within {
 	scroll-behavior: smooth;
 }
 
+html,body {
+	overflow-x: hidden;
+}
+
 /* Set core body defaults */
 body {
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
+	position: relative;
 }
 
 /* A elements that don't have a class get default styles */
