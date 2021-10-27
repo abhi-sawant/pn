@@ -15,10 +15,11 @@ a:active {
 
 .section__title {
 	font-size: 2rem;
-	font-weight: 600;
+	font-weight: 700;
 	text-align: center;
-	margin: 0 1em;
+	// margin: 0 1em;
 	// color: var(--blue);
+	margin-bottom: 0.3em;
 	background: linear-gradient(to left, hsl(201, 100%, 50%), hsl(207, 100%, 30%));
 	background-size: 200% auto;
 	color: red;
@@ -39,6 +40,6 @@ a:active {
 
 .section__description {
 	margin: auto;
-	margin-block: 1em;
+	// margin-block: 1em;
 	text-align: center;
 }
