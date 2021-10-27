@@ -1,0 +1,48 @@
+@use "../util" as *;
+
+.footer {
+    .footer-top {
+        background: linear-gradient(to right, var(--blue), var(--light-blue));
+        color: white;
+        padding: 2em 1em;
+        margin-top: -5em;
+        margin-bottom: 0;
+        z-index: 111;
+        border-radius: 10px;
+        .ft-left {
+            margin-bottom: 1em;
+            .left-up {
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+            .left-down {
+                font-weight: 500;
+            }
+        }
+        .ft-right {
+            .ft-con {
+                display: inline-block;
+                margin: auto;
+                font-weight: 600;
+                color:var(--blue);
+                background: white;
+                padding: 0.5em 1.3em;
+                border-radius: 5px;
+            }
+        }
+        @include breakpoint(medium){
+            display: grid;
+            grid-template-columns: 80% 20%;
+            align-items: center;
+            padding-inline: 2em;
+            .ft-right {
+                justify-self: end;
+            }
+        }
+    }
+    .footer-bottom {
+        z-index: -111;
+        margin-top: -5em;
+        padding-top: 5em;
+    }
+}
