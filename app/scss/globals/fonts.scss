@@ -1,39 +1,43 @@
-// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
 @font-face {
-	font-family: "Inter", sans-serif;
-	src: url(../assets/font/Inter-VariableFont.ttf);
-}
-
-@font-face {
-	font-family: "Poppins", sans-serif;
-	src: url("../assets/font/poppins-regular.woff") format("woff");
+	font-family: 'Poppins';
+	font-style: normal;
 	font-weight: 400;
-}
-
-@font-face {
-	font-family: "Poppins", sans-serif;
-	src: url("../assets/font/poppins-medium.woff") format("woff");
+	src: local(''),
+		 url('../assets/font/poppins-v15-latin-regular.woff2') format('woff2'),
+		 url('../assets/font/poppins-v15-latin-regular.woff') format('woff'); 
+  }
+  @font-face {
+	font-family: 'Poppins';
+	font-style: normal;
 	font-weight: 500;
-}
-
-@font-face {
-	font-family: "Poppins", sans-serif;
-	src: url("../assets/font/poppins-semibold.woff") format("woff");
+	src: local(''),
+		 url('../assets/font/poppins-v15-latin-500.woff2') format('woff2'),
+		 url('../assets/font/poppins-v15-latin-500.woff') format('woff'); 
+  }
+  @font-face {
+	font-family: 'Poppins';
+	font-style: normal;
 	font-weight: 600;
-}
-
-@font-face {
-	font-family: "Poppins", sans-serif;
-	src: url("../assets/font/poppins-bold.woff") format("woff");
+	src: local(''),
+		 url('../assets/font/poppins-v15-latin-600.woff2') format('woff2'),
+		 url('../assets/font/poppins-v15-latin-600.woff') format('woff'); 
+  }
+  @font-face {
+	font-family: 'Poppins';
+	font-style: normal;
 	font-weight: 700;
-}
-
-@font-face {
-	font-family: "Poppins", sans-serif;
-	src: url("../assets/font/poppins-extrabold.woff") format("woff");
+	src: local(''),
+		 url('../assets/font/poppins-v15-latin-700.woff2') format('woff2'),
+		 url('../assets/font/poppins-v15-latin-700.woff') format('woff'); 
+  }
+  @font-face {
+	font-family: 'Poppins';
+	font-style: normal;
 	font-weight: 800;
-}
+	src: local(''),
+		 url('../assets/font/poppins-v15-latin-800.woff2') format('woff2'),
+		 url('../assets/font/poppins-v15-latin-800.woff') format('woff'); 
+  }
 
 :root {
 	--font-body: "Poppins", sans-serif;
@@ -41,5 +45,5 @@
 
 html,
 body {
-	font-family: var(--font-body);
+	font-family: "Poppins", sans-serif;
 }
