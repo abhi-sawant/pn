@@ -20,7 +20,18 @@ a:active {
 	// margin: 0 1em;
 	// color: var(--blue);
 	margin-bottom: 0.3em;
-	background: linear-gradient(to left, hsl(201, 100%, 50%), hsl(207, 100%, 30%));
+	background: linear-gradient(
+		to 45deg,
+		hsl(201, 100%, 50%),
+		hsl(201, 100%, 45%),
+		hsl(201, 100%, 40%),
+		hsl(201, 100%, 35%),
+		hsl(207, 100%, 30%),
+		hsl(201, 100%, 35%),
+		hsl(201, 100%, 40%),
+		hsl(201, 100%, 45%),
+		hsl(201, 100%, 50%)
+	);
 	background-size: 200% auto;
 	color: red;
 	background-clip: text;
