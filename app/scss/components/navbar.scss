@@ -7,7 +7,7 @@
         "ham logo ."
         "link link link";
     align-items: center;
-    padding: 0.5em 1em;
+    padding: 0.3em 1em;
     .hamburger {
         grid-area: ham;
         width: 25px;
@@ -44,11 +44,11 @@
         max-height: 0;
         overflow: hidden;
         transition: all 250ms;
-        margin-bottom: -0.51rem;
+        margin-bottom: -0.5em;
         .nav__link {
             color: var(--blue);
             font-weight: 600;
-            padding: 0.5em 0;
+            padding: 1em 0;
             display: block;
             border-bottom: 1px solid hsla(201, 100%, 47%, 0.2);
             transition: all 250ms;
@@ -75,10 +75,12 @@
         }
         .nav-links {
             max-height: 1000px;
-            margin-bottom: 0.5em;
+            padding: 0;
+            margin: 0.7em auto;
             .nav__link {
                 display: inline-block;
-                margin: 0.2rem 0.5rem;
+                // margin: 0.2rem 0.5rem;
+                padding: 0.5em 1em;
             }
         }
     }

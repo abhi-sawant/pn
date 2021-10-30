@@ -1,8 +1,8 @@
 @use "../util" as *;
 
 .success {
-    background: #f1f1f1;
-    padding: 2em 0;
+    background: #e3e3e3;
+    padding: 3em 0;
     padding-bottom: 6em;
     .success__container {
         .success-left {
@@ -24,10 +24,10 @@
                     box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
                     .number {
                         color: var(--blue);
-                        font-size: 1.3rem;
-                        font-weight: 800;
+                        font-size: 1.2rem;
+                        font-weight: 700;
                         @include breakpoint(medium) {
-                            font-size: 2rem;
+                            font-size: 1.8rem;
                         }
                     }
                     .number-cat {
@@ -66,8 +66,8 @@
                     .success_text {
                         text-align: center;
                         font-style: italic;
-                        font-size: 1.3rem;
-                        margin-bottom: 1.5em;
+                        font-size: 1.1rem;
+                        margin-bottom: 1.3em;
                     }
                     .nameandphoto {
                         width: 70%;
@@ -82,6 +82,7 @@
                         .nameandpost {
                            .name {
                                font-weight: 600;
+                               color: #212121;
                            }
                         }
                     }

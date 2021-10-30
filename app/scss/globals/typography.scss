@@ -3,8 +3,8 @@
 h1,
 h2,
 h3 {
-	margin-top: 0;
-	line-height: 1.1;
+	margin: 0;
+	line-height: 1;
 }
 
 a,
@@ -17,40 +17,33 @@ a:active {
 	font-size: 2rem;
 	font-weight: 700;
 	text-align: center;
-	// margin: 0 1em;
-	// color: var(--blue);
-	margin-bottom: 0.3em;
+	margin: 0.3em auto;
 	background: linear-gradient(
-		to 45deg,
+		130deg,
 		hsl(201, 100%, 50%),
-		hsl(201, 100%, 45%),
 		hsl(201, 100%, 40%),
-		hsl(201, 100%, 35%),
 		hsl(207, 100%, 30%),
-		hsl(201, 100%, 35%),
 		hsl(201, 100%, 40%),
-		hsl(201, 100%, 45%),
 		hsl(201, 100%, 50%)
 	);
 	background-size: 200% auto;
-	color: red;
+	color: var(--blue);
 	background-clip: text;
-	// text-fill-color: transparent;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	animation: shine 4s linear infinite;
+	animation: shine 5s linear infinite;
 	@keyframes shine {
 		to {
 			background-position: 200% center;
 		}
 	}
 	@include breakpoint(medium) {
-		font-size: 3em;
+		font-size: 2.5em;
 	}
 }
 
 .section__description {
-	margin: auto;
-	// margin-block: 1em;
+	font-size: 1rem;
+	margin: 0.3em auto;
 	text-align: center;
 }
