@@ -1,0 +1,53 @@
+@use "../util" as *;
+
+.future {
+    // padding-bottom: 2em;
+    .future__top {
+        padding: 6em 0;
+        background-image: url("../assets/images/fbg1.jpg");
+        background-position: 40% center;
+        .section__title {
+            color: white;
+            margin-bottom: 0.5em;
+        }
+        .section__description {
+            color: #eee;
+        }
+    }
+    .future__bottom {
+        .bottom__cat {
+            text-align: center;
+            margin: 2em 0;
+            border: 1px solid rgba(11,11,11,0.1);
+            border-radius: 10px;
+            .future__img {
+                border-radius: 10px 10px 0 0;
+            }
+            .future__title {
+                color: black;
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin: 1em 2em;
+            }
+            .future__des {
+                font-size: 1rem;
+                margin: 1em 2em;
+            }
+            .button {
+                margin: 1em 2em;
+                @include breakpoint (medium) {
+                    align-self: end;
+                }
+            }
+            @include breakpoint (medium) {
+                display: grid;
+                grid-auto-flow: row;
+            }
+        }
+        @include breakpoint(medium) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2em;
+        }
+    }
+}
