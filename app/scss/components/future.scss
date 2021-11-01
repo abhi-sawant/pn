@@ -13,21 +13,30 @@
         .section__description {
             color: #eee;
         }
+        @include breakpoint(medium) {
+            margin-bottom: 0;
+            padding-bottom: 10em;
+        }
+        @include breakpoint(large) {
+            padding-bottom: 15em;
+        }
     }
     .future__bottom {
         .bottom__cat {
             text-align: center;
             margin: 2em 0;
-            border: 1px solid rgba(11,11,11,0.1);
-            border-radius: 10px;
             .future__img {
                 border-radius: 10px 10px 0 0;
+                position: relative;
             }
             .future__title {
                 color: black;
                 font-size: 1.3rem;
                 font-weight: 600;
                 margin: 1em 2em;
+                .title__num {
+                    color: #aaa;
+                }
             }
             .future__des {
                 font-size: 1rem;
@@ -35,19 +44,23 @@
             }
             .button {
                 margin: 1em 2em;
-                @include breakpoint (medium) {
+                @include breakpoint(medium) {
                     align-self: end;
                 }
             }
-            @include breakpoint (medium) {
+            @include breakpoint(medium) {
                 display: grid;
                 grid-auto-flow: row;
+            }
+            @include breakpoint(medium) {
+                margin-top: 0;
             }
         }
         @include breakpoint(medium) {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 2em;
+            margin-top: 0;
         }
     }
 }

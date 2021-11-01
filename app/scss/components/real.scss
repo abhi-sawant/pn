@@ -12,6 +12,18 @@
             background: white;
             padding: 2em;
             margin-bottom: 1em;
+            border-radius: 5px;
+            &:hover {
+                background: linear-gradient(to right, var(--blue), var(--light-blue));
+                color: white;
+            }
+            &:hover .realcat__title {
+                color:white;
+            }
+            &:hover .button {
+                background: white;
+                color: var(--blue);
+            }
             .realcat__title {
                 font-size: 1.3rem;
                 color: black;
@@ -22,6 +34,7 @@
                 margin-bottom: 1em;
             }
             .button{
+                cursor: pointer;
                 @include breakpoint(medium) {
                     align-self: end;
                 }

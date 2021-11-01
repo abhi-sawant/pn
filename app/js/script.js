@@ -28,3 +28,20 @@ for (i = 0; i < acc.length; i++) {
 		}
 	});
 }
+
+// var futureImg = document.getElementById("futureImg1");
+// var coco = futureImg.height+4;
+// console.log("-" + coco + "px");
+// futureImg.style.marginTop = "-" + coco + "px";
+
+console.log(window.innerWidth);
+var futureImg = document.getElementsByClassName("future__img");
+console.log(futureImg);
+var futureHeight = document.getElementById("futureImg1").height;
+console.log(futureHeight);
+
+if (window.innerWidth > 639) {
+	for (i = 0; i < futureImg.length; i++) {
+		futureImg[i].style.marginTop = "-" + futureHeight + "px";
+	}
+}
