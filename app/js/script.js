@@ -12,6 +12,18 @@ ham.addEventListener("click", function () {
 	}
 })
 
+console.log(window.innerWidth);
+var futureImg = document.getElementsByClassName("future__img");
+console.log(futureImg);
+var futureHeight = document.getElementById("futureImg1").height;
+console.log(futureHeight);
+
+if (window.innerWidth > 639) {
+	for (i = 0; i < futureImg.length; i++) {
+		futureImg[i].style.marginTop = "-" + futureHeight + "px";
+	}
+}
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -34,14 +46,3 @@ for (i = 0; i < acc.length; i++) {
 // console.log("-" + coco + "px");
 // futureImg.style.marginTop = "-" + coco + "px";
 
-console.log(window.innerWidth);
-var futureImg = document.getElementsByClassName("future__img");
-console.log(futureImg);
-var futureHeight = document.getElementById("futureImg1").height;
-console.log(futureHeight);
-
-if (window.innerWidth > 639) {
-	for (i = 0; i < futureImg.length; i++) {
-		futureImg[i].style.marginTop = "-" + futureHeight + "px";
-	}
-}
