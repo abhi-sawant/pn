@@ -25,16 +25,21 @@
         .bottom__cat {
             text-align: center;
             margin: 2em 0;
-            // .img__con {
-            //     position: relative;
-            // }
-            // .dummycon {
-            //     position: absolute;
-            //     inset: 0;
-            //     // width: 100%;
-            //     // height:100%;
-            //     background: red;
-            // }
+            .img__con {
+                position: relative;
+                cursor: pointer;
+                &:hover::after {
+                    content: "Read More";
+                    color: white;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    inset: 0;
+                    border-radius: 10px 10px 0 0;
+                    background: rgba(0,0,0,0.75);
+                }
+            }
             .future__img {
                 border-radius: 10px 10px 0 0;
                 position: relative;
