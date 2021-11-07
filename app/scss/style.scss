@@ -9,6 +9,13 @@
   margin-bottom: 20px;
 }
 
+.brochure {
+  animation: MoveUpDown 2s linear infinite;
+  position: fixed;
+  right: 20px;
+  margin-bottom: 20px;
+}
+
 .copyright {
   background: var(--blue);
   margin: 0;
@@ -28,6 +35,6 @@
     bottom: 0;
   }
   50% {
-    bottom: 10px;
+    bottom: 5px;
   }
 }

@@ -1,7 +1,6 @@
 @use "../util" as *;
 
 .future {
-    // padding-bottom: 2em;
     .future__top {
         padding: 6em 0;
         background-image: url("../assets/images/fbg1.jpg");
@@ -25,6 +24,8 @@
         .bottom__cat {
             text-align: center;
             margin: 2em 0;
+            border: 1px solid rgba(11,11,11,0.2);
+            border-radius: 10px;
             .img__con {
                 position: relative;
                 cursor: pointer;
@@ -46,16 +47,18 @@
             }
             .future__title {
                 color: black;
-                font-size: 1.3rem;
+                font-size: 1.1rem;
                 font-weight: 600;
-                margin: 1em 2em;
+                margin: 1em 1em 0.5em 1em;
+                text-align: start;
                 .title__num {
                     color: #aaa;
                 }
             }
             .future__des {
+                text-align: start;
                 font-size: 1rem;
-                margin: 1em 2em;
+                margin: 0.5em 2em 1em 2em;
             }
             .button {
                 margin: 1em 2em;
@@ -74,12 +77,12 @@
         @include breakpoint(medium) {
             display: grid;
             grid-template-columns: 210px 210px 210px;
-            justify-content: space-between;
-            margin-top: -123px;
+            justify-content: space-around;
+            margin-top: -117px;
         }
         @include breakpoint(large) {
-            grid-template-columns: 320px 320px 320px;
-            margin-top: -180px;
+            grid-template-columns: 350px 350px 350px;
+            margin-top: -197px;
         }
     }
 }
