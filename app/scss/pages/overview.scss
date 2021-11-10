@@ -1,0 +1,112 @@
+@use "../util" as *;
+
+.page__title {
+    background: url("../assets/images/title-back.webp");
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2.5em 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.2);
+    @include breakpoint(medium) {
+        font-size: 3rem;
+    }
+}
+
+.vision-des {
+    .vision-des__container {
+        padding: 2em 0;
+        @include breakpoint(medium) {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            justify-content: center;
+            align-items: center;
+            gap: 3em;
+            line-height: 2;
+            color: #212121;
+        }
+        .vision-des__text {
+            margin-bottom: 2em;
+            @include breakpoint(medium) {
+                margin-bottom: 0;
+            }
+            .first-word {
+                display: inline-block;
+                font-size: 2rem;
+                color: var(--blue);
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.president {
+    .president__container {
+        padding: 2em 0;
+        .section__title {
+            margin-bottom: 1em;
+        }
+        .president__talk {
+            @include breakpoint(medium) {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                justify-content: center;
+                align-items: center;
+                gap: 3em;
+                line-height: 2;
+                color: #212121;
+            }
+            .president__image {
+                border-radius: 10px;
+            }
+            .talk {
+                margin-bottom: 2em;
+                @include breakpoint(medium) {
+                    margin-bottom: 0;
+                }
+                .first-word {
+                    display: inline-block;
+                    font-size: 2rem;
+                    color: var(--blue);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.srcell {
+    .secell__container {
+        padding: 2em 0;
+        .section__title {
+            margin-bottom: 1em;
+        }
+        .srcell__text {
+            @include breakpoint(medium) {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                justify-content: center;
+                align-items: center;
+                gap: 3em;
+                line-height: 2;
+                color: #212121;
+            }
+            .srcell__image {
+                border-radius: 10px;
+            }
+            .srcell__text-text {
+                margin-bottom: 2em;
+                @include breakpoint(medium) {
+                    margin-bottom: 0;
+                }
+                .first-word {
+                    display: inline-block;
+                    font-size: 2rem;
+                    color: var(--blue);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
