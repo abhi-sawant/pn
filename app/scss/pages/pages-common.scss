@@ -1,0 +1,21 @@
+@use "../util" as *;
+
+.page__title {
+    background: url("../assets/images/title-back.webp");
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2.5em 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.2);
+    @include breakpoint(medium) {
+        font-size: 3rem;
+    }
+}
+
+.footer-pages {
+    .footer-top {
+        margin-top: 0em;
+    }
+}
