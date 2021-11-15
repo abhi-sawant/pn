@@ -1,0 +1,49 @@
+@use "../util" as *;
+
+.con-des {
+    .section__description {
+        margin-top: 2em;
+    }
+}
+
+.con__container {
+    margin-top: 2em;
+    // h1{
+    //     color: var(--blue)
+    // }
+    .con-form {
+        margin-top: 2em;
+        color: #313131;
+        font-weight: 500;
+        & > * {
+            width: 100%;
+            padding: 0.8em;
+            margin: 0.5em auto;
+            border: 2px solid var(--light-blue);
+            border-radius: 5px;
+            outline: none;
+            background: #f5f5f5;
+            &:focus-visible {
+                border: 2px solid var(--blue);
+            }
+            @include breakpoint(medium) {
+                margin: 0 auto;
+            }
+        }
+        @include breakpoint(medium) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5em;
+        }
+        .msg-msg {
+            height: 150px;
+        }
+    }
+}
+
+.con-details {
+    text-align: center;
+    .con__container {
+        text-align: center;
+    }
+}
