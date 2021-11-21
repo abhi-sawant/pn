@@ -1,0 +1,76 @@
+@use "../util" as *;
+
+.course {
+    margin-block: 2em;
+    .course__container {
+        .section__title {
+            margin-bottom: 0.5em;
+        }
+        .section__description {
+            margin-top: 0;
+            color: var(--blue);
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .course__content {
+            .course__image {
+                width: 90%;
+                margin: auto;
+                border-radius: 0px 15px 0px 15px;
+                @include breakpoint(medium) {
+                    width: 80%;
+                }
+            }
+            .subteach {
+                color: var(--blue);
+                margin-block: 1em;
+                font-size: 1.2rem;
+                text-align: center;
+            }
+            .course__description {
+                text-align: center;
+                @include breakpoint(medium) {
+                    width: 70%;
+                    margin: auto;
+                }
+            }
+            .sub {
+                text-align: center;
+                .sub-ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin-top: 0;
+                }
+            }
+            .teacher {
+                text-align: center;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: space-around;
+                align-items: center;
+                gap: 1em;
+                .teacher-person {
+                    padding: 0;
+                    margin: 0;
+                    .teacher-image {
+                        border-radius: 1000px;
+                        margin: auto;
+                    }
+                    .teacher-name {
+                        font-weight: 500;
+                        color: #212121;
+                        margin-top: 0.5em;
+                    }
+                }
+                @include breakpoint(medium) {
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    margin-bottom: 0;
+                }
+                @include breakpoint(large) {
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                }
+            }
+        }
+    }
+}
