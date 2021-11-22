@@ -1,15 +1,14 @@
 @use "../util" as *;
 
 .footer {
-    padding: 3em 0;
+    background: #ecedfb;
     .footer-top {
         background: linear-gradient(to right, var(--blue), var(--light-blue));
         color: white;
-        padding: 2em 1em;
-        margin-top: -6em;
-        margin-bottom: 0;
-        z-index: 111;
+        padding: 2em 2em;
+        margin-bottom: 2em;
         border-radius: 10px;
+        border: 1px solid rgba(11, 11, 11, 0.1);
         .ft-left {
             margin-bottom: 1em;
             .left-up {
@@ -33,7 +32,7 @@
                 border-radius: 5px;
             }
         }
-        @include breakpoint(medium){
+        @include breakpoint(medium) {
             display: grid;
             grid-template-columns: 80% 20%;
             align-items: center;
@@ -44,24 +43,17 @@
         }
     }
     .footer-bottom {
-        z-index: -111;
-        margin-top: -5em;
-        padding-top: 6em;
+        z-index: -1111;
+        padding: 3em 0;
         text-align: center;
+        background: linear-gradient(to right, var(--blue), var(--light-blue));
         .bottom__container {
             .bt {
                 margin-bottom: 1em;
                 img {
                     margin: auto;
                 }
-                .social {
-                    margin-top: 1em;
-                    img {
-                        width: 10%;
-                        display: inline-block;
-                        margin: 0 1em;
-                    }
-                }
+
                 @include breakpoint(medium) {
                     display: grid;
                     grid-template-columns: 70% 30%;
@@ -78,43 +70,63 @@
             }
             .tp {
                 .footer__section__title {
-                    color: var(--blue);
-                    font-weight: 700;
-                    font-size: 1.4rem;
+                    color: White;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 2rem;
                     margin: 0.3em 0;
                     margin-top: 1em;
                 }
                 .footer__about {
+                    background: white;
+                    padding: 2em;
+                    border-radius: 20px;
+                    box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.40);
                     .footer__about_des {
                         font-weight: 500;
                     }
+                    .social {
+                        margin-top: 1em;
+                        img {
+                            width: 10%;
+                            display: inline-block;
+                            margin: 0 1em;
+                        }
+                    }
                 }
                 .footer__address {
+                    color: white;
+                    text-align: center;
                     .addressline {
                         font-weight: 500;
+                        color: #e2e2e2;
+                        a {
+                            color: #e2e2e2;
+                        }
                     }
                 }
                 .footer__links__con {
+                    text-align: center;
                     .footer__links {
                         list-style-type: none;
                         padding-left: 0;
                         margin: 0;
                         .footer__link {
-                            color: var(--light-blue);
-                            li{
+                            color: #e2e2e2;
+                            li {
                                 font-weight: 500;
                             }
                         }
                     }
                 }
-                @include breakpoint(medium){
+                @include breakpoint(medium) {
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
                     gap: 2em;
                 }
             }
         }
-        @include breakpoint(medium){
+        @include breakpoint(medium) {
             text-align: left;
         }
     }

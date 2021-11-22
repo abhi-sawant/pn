@@ -3,7 +3,7 @@
 .success {
     background: #ecedfb;
     padding: 3em 0;
-    padding-bottom: 6em;
+    padding-bottom: 5em;
     .success__container {
         .success-left {
             .left__image {
@@ -46,6 +46,7 @@
         }
         .success-right {
             margin-top: 2.5em;
+
             .section__description {
                 margin: 0;
                 color: var(--light-blue);
@@ -91,6 +92,10 @@
             }
             @include breakpoint(large) {
                 margin-top: 0;
+                background: url("../assets/images/success_right_bg.png");
+                background-size: 70%;
+                background-repeat: no-repeat;
+                background-position: center bottom;
             }
         }
         @include breakpoint(large) {
