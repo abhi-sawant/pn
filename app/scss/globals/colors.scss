@@ -7,4 +7,5 @@
 	--body-text: hsl(0, 2%, 38%);
 	--title-text: hsl(219, 100%, 8%);
 	--gradient: linear-gradient(to right, var(--blue), var(--light-blue));
+	--gradient-reverse: linear-gradient(to right, var(--light-blue), var(--blue));
 }

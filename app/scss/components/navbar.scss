@@ -1,92 +1,201 @@
 @use "../util" as *;
 
-.navbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        "ham logo ."
-        "link link link";
-    align-items: center;
-    padding: 0.3em 1em;
-    .hamburger {
-        grid-area: ham;
-        width: 25px;
-        height: 3px;
-        background: var(--title-text);
-        border-radius: 100px;
-        transition: all 250ms;
-        &::after,
-        &::before {
-            display: block;
-            content: "";
-            background: var(--title-text);
+section {
+    position: relative;
+    .navbar {
+        position: sticky;
+        top: 0%;
+        display: grid;
+        // grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "ham logo ."
+            "link link link";
+        align-items: center;
+        padding: 0.3em 1em;
+        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3);
+        .hamburger {
+            grid-area: ham;
+            width: 25px;
             height: 3px;
+            background: var(--title-text);
             border-radius: 100px;
-            width: 115%;
             transition: all 250ms;
-        }
-        &::after {
-            transform: translateY(-11px);
-        }
-        &::before {
-            transform: translateY(8px);
-        }
-    }
-    .nav-logo {
-        grid-area: logo;
-    }
-    .nav-links {
-        display: block;
-        grid-area: link;
-        list-style-type: none;
-        text-align: center;
-        padding-left: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: all 250ms;
-        margin-bottom: -0.5em;
-        .nav__link {
-            color: var(--blue);
-            font-weight: 600;
-            padding: 1em 0;
-            display: block;
-            border-bottom: 1px solid hsla(201, 100%, 47%, 0.2);
-            transition: all 250ms;
-            &:hover {
-                color: var(--red);
-                border-bottom: 1px solid var(--red);
+            &::after,
+            &::before {
+                display: block;
+                content: "";
+                background: var(--title-text);
+                height: 3px;
+                border-radius: 100px;
+                width: 115%;
                 transition: all 250ms;
             }
+            &::after {
+                transform: translateY(-11px);
+            }
+            &::before {
+                transform: translateY(8px);
+            }
         }
-    }
-    @include breakpoint(medium) {
-        grid-template-areas:
-            ". logo ."
-            "link link link";
+        .nav-logo {
+            grid-area: logo;
+            img {
+                width: 40%;
+                margin: auto;
+            }
+        }
+        .nav-links {
+            display: block;
+            grid-area: link;
+            list-style-type: none;
+            text-align: center;
+            padding-left: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 250ms;
+            margin-bottom: -0.5em;
+            .nav__link {
+                color: var(--blue);
+                font-weight: 600;
+                padding: 1em 0;
+                display: block;
+                // border-bottom: 1px solid hsla(201, 100%, 47%, 0.2);
+                transition: all 250ms;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    left: 10%;
+                    width: 80%;
+                    height: 3px;
+                    background: var(--gradient);
+                }
+                &:hover::after {
+                    background: var(--gradient-reverse);
+                }
+            }
+        }
+        @include breakpoint(medium) {
+            // padding: 0.8em 0;
+            .hamburger {
+                display: none;
+            }
+            // grid-template-columns: 1fr 1fr;
+            grid-template-areas: "logo link link link link link";
             .nav-logo {
                 text-align: center;
                 img {
-                    width: 40%;
+                    width: 50%;
                     margin: auto;
                 }
             }
-        .hamburger {
-            display: none;
-        }
-        .nav-links {
-            max-height: 1000px;
-            padding: 0;
-            margin: 0.7em auto;
-            .nav__link {
-                display: inline-block;
-                // margin: 0.2rem 0.5rem;
-                padding: 0.5em 1em;
+            .nav-links {
+                max-height: 1000px;
+                padding: 0.5em 0;
+                margin: 0.7em auto;
+                .nav__link {
+                    display: inline-block;
+                    // margin: 0.2rem 0.5rem;
+                    padding: 0.5em 1em;
+                }
             }
         }
-    }
-    @include breakpoint(large) {
-        .navbar {
-            display: flex;
-        }
+        // @include breakpoint(large) {
+        //     .navbar {
+        //         display: flex;
+        //     }
+        // }
     }
 }
+
+// .navbar {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-areas:
+//         "ham logo ."
+//         "link link link";
+//     align-items: center;
+//     padding: 0.3em 1em;
+//     .hamburger {
+//         grid-area: ham;
+//         width: 25px;
+//         height: 3px;
+//         background: var(--title-text);
+//         border-radius: 100px;
+//         transition: all 250ms;
+//         &::after,
+//         &::before {
+//             display: block;
+//             content: "";
+//             background: var(--title-text);
+//             height: 3px;
+//             border-radius: 100px;
+//             width: 115%;
+//             transition: all 250ms;
+//         }
+//         &::after {
+//             transform: translateY(-11px);
+//         }
+//         &::before {
+//             transform: translateY(8px);
+//         }
+//     }
+//     .nav-logo {
+//         grid-area: logo;
+//     }
+//     .nav-links {
+//         display: block;
+//         grid-area: link;
+//         list-style-type: none;
+//         text-align: center;
+//         padding-left: 0;
+//         max-height: 0;
+//         overflow: hidden;
+//         transition: all 250ms;
+//         margin-bottom: -0.5em;
+//         .nav__link {
+//             color: var(--blue);
+//             font-weight: 600;
+//             padding: 1em 0;
+//             display: block;
+//             border-bottom: 1px solid hsla(201, 100%, 47%, 0.2);
+//             transition: all 250ms;
+//             &:hover {
+//                 color: var(--red);
+//                 border-bottom: 1px solid var(--red);
+//                 transition: all 250ms;
+//             }
+//         }
+//     }
+//     @include breakpoint(medium) {
+//         grid-template-areas:
+//             ". logo ."
+//             "link link link";
+//             .nav-logo {
+//                 text-align: center;
+//                 img {
+//                     width: 40%;
+//                     margin: auto;
+//                 }
+//             }
+//         .hamburger {
+//             display: none;
+//         }
+//         .nav-links {
+//             max-height: 1000px;
+//             padding: 0;
+//             margin: 0.7em auto;
+//             .nav__link {
+//                 display: inline-block;
+//                 // margin: 0.2rem 0.5rem;
+//                 padding: 0.5em 1em;
+//             }
+//         }
+//     }
+//     @include breakpoint(large) {
+//         .navbar {
+//             display: flex;
+//         }
+//     }
+// }

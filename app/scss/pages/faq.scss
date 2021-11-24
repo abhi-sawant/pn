@@ -2,9 +2,11 @@
 
 .faq__title {
     background: url("../assets/images/title-back/faq-title.webp"), rgba(50, 50, 50, 0.9);
+    background-blend-mode: darken;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position-x: 0% 0%;
+    background-attachment: fixed;
 }
 
 .faq {

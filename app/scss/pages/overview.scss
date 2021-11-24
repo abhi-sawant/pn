@@ -1,5 +1,13 @@
 @use "../util" as *;
 
+.about__title {
+    background: url("../assets/images/title-back/about-title.webp"), rgba(50, 50, 50, 0.9);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .vsmsmt {
     background: url("../assets/images/title-back/title-back.webp");
     background-size: cover;
