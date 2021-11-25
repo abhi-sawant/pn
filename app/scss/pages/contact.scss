@@ -64,6 +64,9 @@
             &:focus {
                 outline: 2px solid var(--blue);
             }
+            &:last-of-type {
+                height: 150px;
+            }
         }
         .button {
             border-radius: 20px 0 20px 0;

@@ -60,3 +60,16 @@ $(document).ready(function () {
     });
 
 });
+
+$(document).ready(function () {
+    $('.carousel__container').slick({
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+
+});

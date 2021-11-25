@@ -1,5 +1,13 @@
 @use "../util" as *;
 
+.career__title {
+    background: url("../assets/images/title-back/career-title.webp"), rgba(20, 20, 20, 0.8);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .career {
     .section__description {
         margin-top: 2em;

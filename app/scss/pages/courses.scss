@@ -1,5 +1,13 @@
 @use "../util" as *;
 
+.courses__title {
+    background: url("../assets/images/title-back/courses-title.webp"), rgba(20, 20, 20, 0.8);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .course {
     margin-block: 2em;
     .course__container {

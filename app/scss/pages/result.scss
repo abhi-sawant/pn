@@ -1,11 +1,79 @@
 @use "../util" as *;
 
-// .success-intro {
-//     .success-intro__container {
-//         margin: 2.005em auto;
-//         text-align: center;
-//     }
-// }
+.result__title {
+    background: url("../assets/images/title-back/result-title.webp"), rgba(20, 20, 20, 0.8);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.carousel {
+    background: url("../assets/images/success/topper-bg.png"), var(--some-background);
+    background-size: cover;
+    padding: 4em 0;
+    .carousel__container {
+        img {
+            border-radius: 20px;
+            height: auto;
+        }
+    }
+}
+
+.excellence {
+    background: url("../assets/images/title-back/title-back.webp");
+    background-size: cover;
+    padding: 3em 0;
+    .excellence__container {
+        max-width: 800px;
+        .section__titlee {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            margin: 0.3em auto;
+            @include breakpoint(medium) {
+                font-size: 2.5em;
+            }
+        }
+        .section__description {
+            color: #eee;
+        }
+    }
+}
+
+.standard-success {
+    padding: 3em 0;
+    .section__title {
+        margin-bottom: 0.8em;
+    }
+    .successful {
+        padding: 1em;
+        border-bottom: 5px solid var(--blue);
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        @include breakpoint(medium) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @include breakpoint(large) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+    &:nth-child(even) {
+        background: white;
+        .successful {
+            background: var(--some-background);
+        }
+    }
+    &:nth-child(odd) {
+        background: var(--some-background);
+        .successful {
+            background: white;
+        }
+    }
+}
 
 // .success-students {
 //     .success-students__container {
