@@ -1,10 +1,11 @@
 @use "../util" as *;
 
-section {
+.navsec {
     position: relative;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3);
     .navbar {
-        position: sticky;
-        top: 0%;
+        max-width: 1200px;
+        margin: auto;
         display: grid;
         // grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
@@ -12,7 +13,6 @@ section {
             "link link link";
         align-items: center;
         padding: 0.3em 1em;
-        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3);
         .hamburger {
             grid-area: ham;
             width: 25px;
@@ -89,12 +89,12 @@ section {
             .hamburger {
                 display: none;
             }
-            // grid-template-columns: 1fr 1fr;
-            grid-template-areas: "logo link link link link link";
+            grid-template-columns: 15% 85%;
+            grid-template-areas: "logo link";
             .nav-logo {
                 text-align: center;
                 img {
-                    width: 50%;
+                    width: 100%;
                     margin: auto;
                 }
             }
@@ -102,6 +102,7 @@ section {
                 max-height: 1000px;
                 padding: 0.5em 0;
                 margin: 0.7em auto;
+                margin-right: 1em;
                 .nav__link {
                     display: inline-block;
                     // margin: 0.2rem 0.5rem;
