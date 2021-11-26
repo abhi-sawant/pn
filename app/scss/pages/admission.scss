@@ -7,3 +7,14 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.download-form {
+    padding: 3em 0;
+    .section__description {
+        margin-bottom: 0.8em;
+    }
+    .download-form__container {
+        margin-top: 2em;
+        text-align: center;
+    }
+}
