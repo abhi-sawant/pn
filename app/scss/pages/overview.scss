@@ -13,6 +13,7 @@
     background-size: cover;
     padding: 4em 0;
     margin: 2em 0;
+    margin-bottom: 0;
     .vsmsmt__container {
         .vsm {
             background: white;
@@ -36,7 +37,11 @@
 }
 
 .president {
-    padding: 2em 0em;
+    padding: 3em 0em;
+    background: var(--some-background);
+    // .section__title {
+    //     margin-top: 0;
+    // }
     .president__container {
         .about__right {
             .about__name {
@@ -127,37 +132,41 @@
 //     }
 // }
 
-// .srcell {
-//     .secell__container {
-//         padding: 2em 0;
-//         .section__title {
-//             margin-bottom: 1em;
-//         }
-//         .srcell__text {
-//             @include breakpoint(medium) {
-//                 display: grid;
-//                 grid-template-columns: 2fr 1fr;
-//                 justify-content: center;
-//                 align-items: center;
-//                 gap: 3em;
-//                 line-height: 2;
-//                 color: #212121;
-//             }
-//             .srcell__image {
-//                 border-radius: 10px;
-//             }
-//             .srcell__text-text {
-//                 margin-bottom: 2em;
-//                 @include breakpoint(medium) {
-//                     margin-bottom: 0;
-//                 }
-//                 .first-word {
-//                     display: inline-block;
-//                     font-size: 2rem;
-//                     color: var(--blue);
-//                     font-weight: 600;
-//                 }
-//             }
-//         }
-//     }
-// }
+.srcell {
+    .secell__container {
+        padding: 2em 0;
+        .section__title {
+            margin-bottom: 1em;
+        }
+        .srcell__text {
+            @include breakpoint(medium) {
+                display: grid;
+                grid-template-columns: 60% 40%;
+                justify-content: center;
+                align-items: center;
+                gap: 3em;
+                line-height: 2;
+                color: #212121;
+            }
+            .srcell__image {
+                border-radius: 10px;
+            }
+            .srcell__text-text {
+                margin-bottom: 2em;
+                @include breakpoint(medium) {
+                    margin-bottom: 0;
+                }
+                .first-word {
+                    display: inline-block;
+                    font-size: 2rem;
+                    color: var(--blue);
+                    font-weight: 600;
+                }
+                .button {
+                    width: 50%;
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
+}
