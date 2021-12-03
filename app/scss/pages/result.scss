@@ -75,6 +75,85 @@
     }
 }
 
+.insights {
+    padding: 3em 0;
+    background: var(--some-background);
+    .section__title {
+        margin: 0.8em auto;
+        margin-top: 0em;
+    }
+    .insights__container {
+        border: 2px solid var(--blue);
+        border-radius: 20px;
+        img {
+            border-radius: 20px;
+            height: auto;
+        }
+    }
+}
+
+.mastermind {
+    padding: 3em 0;
+    background: var(--gradient);
+    .mastermind__container {
+        position: relative;
+        max-width: 1000px;
+        .mastermind-text {
+            margin-bottom: 1em;
+            .mm-title {
+                color: white;
+                font-size: 2rem;
+                margin-bottom: 1em;
+            }
+            .mm-text {
+                color: #eee;
+            }
+            @include breakpoint(medium) {
+                padding: 4em;
+            }
+        }
+        .mm-carousel {
+            background: white;
+            padding: 4em;
+            position: relative;
+            .mm-person {
+                text-align: center;
+                display: grid;
+                grid-auto-flow: row;
+                .mm-img {
+                    border-radius: 1000px;
+                    margin-bottom: 0.5em;
+                    @include breakpoint(medium) {
+                        // width: 80%;
+                        margin: 0.5em auto;
+                    }
+                }
+                .mm-name {
+                    margin-bottom: 0.5em;
+                    font-weight: 700;
+                    color: black;
+                }
+                .mm-ed {
+                    margin-bottom: 0.5em;
+                    font-weight: 600;
+                    color: var(--blue);
+                }
+                .mm-role {
+                    font-weight: 500;
+                }
+            }
+        }
+        @include breakpoint(medium) {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            align-items: stretch;
+        }
+    }
+    @include breakpoint(medium) {
+        padding: 0;
+    }
+}
+
 // .success-students {
 //     .success-students__container {
 //         .success-student {

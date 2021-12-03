@@ -8,6 +8,47 @@
     background-attachment: fixed;
 }
 
+.car-why-pn {
+    background: url("../assets/images/title-back/title-back.webp");
+    margin: 0;
+    padding: 4em 0;
+    background-size: cover;
+    .why-pn__container {
+        max-width: 900px;
+    }
+    .section__title1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        text-align: center;
+        color: white;
+    }
+    .section__description {
+        color: #eee;
+    }
+}
+
+.our-ethos {
+    padding: 3em 0;
+    background: var(--some-background);
+    .our-ethos__container {
+        .etho {
+            text-align: center;
+            .etho-img {
+                width: 40%;
+                margin: 1em auto;
+            }
+        }
+        @include breakpoint (medium) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        @include breakpoint (large) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}
+
 .career {
     padding: 3em 0;
     .section__description {

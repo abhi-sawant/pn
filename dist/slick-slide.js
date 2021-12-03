@@ -8,7 +8,6 @@ $(document).ready(function () {
         slidesToShow: 1,
         adaptiveHeight: true
     });
-
 });
 
 $(document).ready(function () {
@@ -45,7 +44,6 @@ $(document).ready(function () {
             },
         ]
     });
-
 });
 
 $(document).ready(function () {
@@ -58,8 +56,31 @@ $(document).ready(function () {
         slidesToShow: 1,
         adaptiveHeight: true
     });
-
 });
+
+$(document).ready(function () {
+    $('.insights__container').slick({
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        infinite: true,
+        speed: 3000,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+});
+
+// $(document).ready(function () {
+//     $('.mm-carousel').slick({
+//         dots: false,
+//         arrows: false,
+//         autoplay: true,
+//         infinite: true,
+//         speed: 3000,
+//         slidesToShow: 1,
+//         adaptiveHeight: true
+//     });
+// });
 
 $(document).ready(function () {
     $('.carousel__container').slick({
@@ -71,5 +92,4 @@ $(document).ready(function () {
         slidesToShow: 1,
         adaptiveHeight: true
     });
-
 });
