@@ -1,9 +1,105 @@
-@use "../util" as *;
+@use '../util' as *;
 
 .student__title {
-    background: url("../assets/images/title-back/student-title.webp"), rgba(20, 20, 20, 0.8);
+    background: url('../assets/images/title-back/student-title.webp'), rgba(20, 20, 20, 0.8);
     background-blend-mode: darken;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.material {
+    padding: 2em 0;
+    .material__container {
+        .material-form {
+            display: grid;
+            grid-auto-flow: row;
+            gap: 1em;
+            margin: 2em auto;
+            select {
+                padding: 0.5em;
+                border: 1px solid rgba(20, 20, 20, 0.2);
+            }
+            @include breakpoint(medium) {
+                grid-auto-flow: column;
+                gap: 2em;
+            }
+        }
+        .material-table {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            th,
+            td {
+                border: 1px solid rgba(20, 20, 20, 0.2);
+                padding: 0.3em 0;
+            }
+        }
+    }
+}
+
+.alumni {
+    padding: 2em 0;
+    .alumni__container {
+        .alumni-reg {
+            fieldset {
+                padding: 1em;
+                display: grid;
+                grid-auto-flow: row;
+                gap: 1em;
+                margin-bottom: 1em;
+                input,
+                select {
+                    padding: 0.5em 0.2em;
+                    border: none;
+                    border-bottom: 1px solid rgba(20, 20, 20, 0.5);
+                }
+                @include breakpoint(medium) {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
+    }
+}
+
+.add-review {
+    background: hsl(236, 65%, 98%);
+    padding: 2em 0;
+    .add-review__container {
+        .section__title {
+            margin-bottom: 1em;
+        }
+        .review-form {
+            max-width: 900px;
+            margin: auto auto;
+            div {
+                display: grid;
+                grid-auto-flow: row;
+                gap: 1em;
+                @include breakpoint(medium) {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            input,
+            select {
+                padding: 0.5em 0.2em;
+            }
+            #revPhotoLab {
+                display: inline-block;
+                margin-top: 1em;
+            }
+            #revPhoto {
+                
+            }
+            #revRev {
+                display: block;
+                margin: 1em 0;
+                width: 100%;
+                height: 140px;
+            }
+            .button {
+                margin-top: 0.5em;
+            }
+        }
+    }
 }
