@@ -29,6 +29,11 @@ for (i = 0; i < acc.length; i++) {
 	});
 }
 
+const postApplied = document.querySelector("#postApplied");
+function carSel(carOption) {
+	postApplied.value = carOption;
+}
+
 // console.log(window.innerWidth);
 // var futureImg = document.getElementsByClassName("future__img");
 // console.log(futureImg);
