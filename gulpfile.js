@@ -48,6 +48,7 @@ function browserSyncReload(cb) {
 function watchTask() {
 	watch('*.html', browserSyncReload);
 	watch('pages/*.html', browserSyncReload);
+	watch('admissions/*.html', browserSyncReload);
 	watch(
 		['app/scss/**/*.scss', 'app/**/*.js'],
 		series(scssTask, jsTask, browserSyncReload)

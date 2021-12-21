@@ -63,7 +63,7 @@
 }
 
 .add-review {
-    background: hsl(236, 65%, 98%);
+    background: hsl(236, 65%, 99%);
     padding: 2em 0;
     .add-review__container {
         .section__title {
@@ -88,9 +88,6 @@
                 display: inline-block;
                 margin-top: 1em;
             }
-            #revPhoto {
-                
-            }
             #revRev {
                 display: block;
                 margin: 1em 0;
@@ -99,6 +96,66 @@
             }
             .button {
                 margin-top: 0.5em;
+            }
+        }
+    }
+}
+
+.reviews {
+    background: hsl(236, 65%, 96%);
+    padding: 2em 0;
+    .section__title {
+        margin-bottom: 0.8em;
+    }
+    .reviews__container {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 2em;
+        @include breakpoint(medium) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include breakpoint(large) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .review {
+            display: grid;
+            grid-auto-flow: row;
+            gap: 1em;
+            padding: 2em;
+            background: white;
+            border-radius: 10px;
+            border-bottom: 5px solid var(--blue);
+            box-shadow: 3px 3px 10px 3px rgba(20, 20, 20, 0.15);
+            .review-img {
+                width: 40%;
+                border-radius: 1000px;
+                border: 4px solid hsl(236, 65%, 90%);
+                margin: auto;
+            }
+            .review-name {
+                font-weight: 600;
+                margin: auto;
+            }
+            .review-text {
+                max-height: 150px;
+                overflow: auto;
+                color: #777;
+                font-size: 0.9rem;
+                text-align: justify;
+                &::-webkit-scrollbar {
+                    width: 0.5em;
+                    height: 0.5em;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    border-radius: 3px;
+                }
+                &:hover {
+                    background: rgba(255, 255, 255, 0.2);
+                }
+            }
+            .review-class-year {
+                font-weight: 600;
             }
         }
     }
