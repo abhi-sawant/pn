@@ -51,7 +51,7 @@
    background: #ecedfb;
    .contact-form__container {
       max-width: 600px;
-      input {
+      input, textarea {
          margin: 1em 0;
          display: block;
          width: 100%;
@@ -63,9 +63,6 @@
          }
          &:focus {
             outline: 2px solid var(--blue);
-         }
-         &:last-of-type {
-            height: 150px;
          }
       }
       .button {
