@@ -1,543 +1,639 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>PN Institute</title>
-    <link rel="stylesheet" href="dist/slick.css" />
-    <link rel="stylesheet" href="dist/aos.css" />
-    <link rel="stylesheet" href="dist/style.css" />
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="author" content="Abhishek Sawant" />
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="favicon.ico" type="image/x-icon" />
+      <title>PN Institute</title>
+      <link rel="stylesheet" href="/dist/aos.css" />
+      <link rel="stylesheet" href="/dist/slick.css" />
+      <link rel="stylesheet" href="/dist/boxicons.css">
+      <link rel="stylesheet" href="/dist/style.css" />
+   </head>
 
-  <body>
-    <section class="navsec">
-      <nav class="navbar">
-        <div class="hamburger" id="hamburger"></div>
-        <div class="nav-logo">
-          <img src="assets/images/logo.png" alt="" />
-        </div>
-        <ul class="nav-links" id="navLinks">
-          <a href="#">
-            <li class="nav__link">Home</li>
-          </a>
-          <a href="pages/overview.html">
-            <li class="nav__link">Overview</li>
-          </a>
-          <a href="pages/admission.html">
-            <li class="nav__link">Admissions</li>
-          </a>
-          <a href="pages/courses.html">
-            <li class="nav__link">Courses</li>
-          </a>
-          <a href="pages/student.html">
-            <li class="nav__link">Student Corner</li>
-          </a>
-          <a href="pages/result.html">
-            <li class="nav__link">Results</li>
-          </a>
-          <a href="pages/career.html">
-            <li class="nav__link">Career</li>
-          </a>
-          <a href="pages/contact.html">
-            <li class="nav__link">Contact Us</li>
-          </a>
-        </ul>
+   <body>
+      <nav>
+         <div class="navbar">
+            <i class="bx bx-menu"></i>
+            <div class="logo">
+               <a href="#"><img src="/assets/images/logo.png" alt="" /></a>
+            </div>
+            <div class="nav-links">
+               <div class="sidebar-logo">
+                  <!-- <span class="logo-name">CodingLab</span> -->
+                  <img src="/assets/images/logo.png" alt="" />
+                  <i class="bx bx-x"></i>
+               </div>
+               <ul class="links">
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/pages/overview.html">Overview</a></li>
+                  <li><a href="/pages/admission.html">Admission</a></li>
+                  <li><a href="/pages/courses.html">Courses</a></li>
+                  <li>
+                     <a href="#">Student Corner</a>
+                     <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+                     <ul class="htmlCss-sub-menu sub-menu">
+                        <li><a href="/pages/student.html#material">Study material</a></li>
+                        <li><a href="/pages/student.html#pnAdvantages">PN Advantages</a></li>
+                        <li><a href="/pages/student.html#alumni">Alumni Registration</a></li>
+                        <li><a href="/pages/student.html#review">Give Us a Review</a></li>
+                        <li><a href="/pages/student.html#testimonials">Testimonials</a></li>
+                        <!-- <li class="more">
+                         <span><a href="#">More</a>
+                         <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                       </span>
+                         <ul class="more-sub-menu sub-menu">
+                           <li><a href="#">Neumorphism</a></li>
+                           <li><a href="#">Pre-loader</a></li>
+                           <li><a href="#">Glassmorphism</a></li>
+                         </ul>
+                       </li> -->
+                     </ul>
+                  </li>
+                  <li><a href="/pages/result.html">Results</a></li>
+                  <li><a href="/pages/career.html">Career</a></li>
+                  <li><a href="/pages/contact.html">Contact Us</a></li>
+               </ul>
+            </div>
+            <!-- <div class="search-box">
+             <i class='bx bx-search'></i>
+             <div class="input-box">
+               <input type="text" placeholder="Search...">
+             </div>
+           </div> -->
+         </div>
       </nav>
-    </section>
-    <section class="hero">
-      <img src="assets/images/01.webp" alt="" />
-      <img src="assets/images/02.webp" alt="" />
-      <img src="assets/images/03.webp" alt="" />
-      <img src="assets/images/04.webp" alt="" />
-    </section>
-
-    <section class="unione">
-      <div class="container unione__container">
-        <div class="unionecat">
-          <img src="assets/images/unione/education.png" alt="" />
-          <div class="unionecat__text">
-            <p class="unionecat__title">Best Education</p>
-            <p class="unionecat__des">
-              Quality is never an accident; it is the result of intelligent effort
-            </p>
-          </div>
-        </div>
-        <div class="unionecat">
-          <img src="assets/images/unione/teacher.png" alt="" />
-          <div class="unionecat__text">
-            <p class="unionecat__title">Top Faculties</p>
-            <p class="unionecat__des">
-              Teaching kids to count is fine bt teaching them what counts is best
-            </p>
-          </div>
-        </div>
-        <div class="unionecat">
-          <img src="assets/images/unione/online.png" alt="" />
-          <div class="unionecat__text">
-            <p class="unionecat__title">Online Education</p>
-            <p class="unionecat__des">It enables you to study from the place of your convenience</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about" data-aos="fade-up">
-      <div class="container about__container">
-        <img
-          src="assets/images/aboutbanner.webp"
-          alt=""
-          class="aboutbanner"
-          data-aos="fade-right"
-        />
-        <div class="about__right" data-aos="fade-left">
-          <p class="about__name">About Us</p>
-          <p class="about__tag">Education is not preparation for life; education is life itself</p>
-          <p class="about__des">
-            P. N. Institute, educates its students in the fields of Science, Commerce, Arts &
-            Engineering to discover and transmit knowledge and to make lasting contributions in our
-            society through critical thinking and innovation. The core values of our teaching
-            consists of four basic values: dignity, truthfulness, fairness and responsibility.
-          </p>
-          <p class="button">Read More</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="standards" data-aos="fade-up">
-      <div class="container">
-        <h2 class="section__title">Standards We Teach</h2>
-        <p class="section__description">
-          PN Institute is an established name in IIT | JEE | NEET | FOUNDATION | BOARD preparation,
-          guiding students of 6 | 7 | 8 | 9 | 10 | 11 – 12 A & B Group Science since 2012.
-        </p>
-        <div class="container standards__container">
-          <div class="standards__standard">
-            <p class="standard__image">Class 5</p>
-            <p class="standard__name">Class V</p>
-            <span class="button">Read More</span>
-          </div>
-          <div class="standards__standard">
-            <p class="standard__image">Class 6</p>
-            <p class="standard__name">Class VI</p>
-            <span class="button">Read More</span>
-          </div>
-          <div class="standards__standard">
-            <p class="standard__image">Class 7</p>
-            <p class="standard__name">Class VII</p>
-            <span class="button">Read More</span>
-          </div>
-          <div class="standards__standard">
-            <p class="standard__image">Class 8</p>
-            <p class="standard__name">Class VIII</p>
-            <span class="button">Read More</span>
-          </div>
-          <div class="standards__standard">
-            <p class="standard__image">Class 9</p>
-            <p class="standard__name">Class IX</p>
-            <span class="button">Read More</span>
-          </div>
-          <div class="standards__standard">
-            <p class="standard__image">Class 10</p>
-            <p class="standard__name">Class X</p>
-            <span class="button">Read More</span>
-          </div>
-          <div class="standards__standard">
-            <p class="standard__image">Class 11</p>
-            <p class="standard__name">Class XI</p>
-            <span class="button">Read More</span>
-          </div>
-          <div class="standards__standard">
-            <p class="standard__image">Class 12</p>
-            <p class="standard__name">Class XII</p>
-            <span class="button">Read More</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="tag-line" data-aos="fade-up">
-      <div class="container tag-line__container">
-        <div class="tag" data-aos="fade-up">
-          <b> Vadoara’s most trusted name in academics </b> offering the best classroom learning
-          experience.
-        </div>
-        <div class="col" data-aos="fade-up">
-          <a href="" class="join-button">Join PN</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="real" data-aos="fade-up">
-      <div class="section__title container">For Every Student, Every Classroom. Real Results.</div>
-      <div class="container real__container">
-        <div class="realcat" data-aos="fade-right">
-          <p class="realcat__title">CCTV Monitoring</p>
-          <p class="realcat__des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p class="button">Read More</p>
-        </div>
-        <div class="realcat" data-aos="fade-left">
-          <p class="realcat__title">Best teachers</p>
-          <p class="realcat__des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p class="button">Read More</p>
-        </div>
-        <div class="realcat" data-aos="fade-right">
-          <p class="realcat__title">Live Q&A</p>
-          <p class="realcat__des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p class="button">Read More</p>
-        </div>
-        <div class="realcat" data-aos="fade-left">
-          <p class="realcat__title">Class Notes</p>
-          <p class="realcat__des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p class="button">Read More</p>
-        </div>
-        <div class="realcat" data-aos="fade-right">
-          <p class="realcat__title">Library</p>
-          <p class="realcat__des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p class="button">Read More</p>
-        </div>
-        <div class="realcat" data-aos="fade-left">
-          <p class="realcat__title">Personal Attention</p>
-          <p class="realcat__des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p class="button">Read More</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="why" data-aos="fade-up">
-      <h2 class="section__title">Why Choose PNI</h2>
-      <p class="container section__description">
-        We intend to educate students for the future and bring our current creative practices to
-        bear on today’s most critical social, political and environmental challenges.
-      </p>
-      <div class="container why-us__container">
-        <div class="accordion__wrap" data-aos="fade-right">
-          <p class="accordion button">Integrated Teaching Approach</p>
-          <div class="panel">
-            <p>
-              Our teaching methodology is very holistic & unique that it inculcates not only
-              insightful classroom discussions but also excellent study material.
-            </p>
-          </div>
-        </div>
-
-        <div class="accordion__wrap" data-aos="fade-left">
-          <p class="accordion button">Motivational Sessions</p>
-          <div class="panel">
-            <p>
-              Honorable Parth Bansal Sir himself conducts such sessions & makes sure that each
-              student gets motivated to face competitive Exams confidently.
-            </p>
-          </div>
-        </div>
-
-        <div class="accordion__wrap" data-aos="fade-right">
-          <p class="accordion button">Disciplined Learning Environment</p>
-          <div class="panel">
-            <p>
-              P. N. Institute focuses on a positive environment where an individual can learn as
-              well as grow. We follow a good work ethics atmosphere for students.
-            </p>
-          </div>
-        </div>
-
-        <div class="accordion__wrap" data-aos="fade-left">
-          <p class="accordion button">Comprehensive testing system</p>
-          <div class="panel">
-            <p>
-              Term tests which are long syllabus tests are common for all students, they are
-              conducted to give real test environment experience.
-            </p>
-          </div>
-        </div>
-
-        <div class="accordion__wrap" data-aos="fade-right">
-          <p class="accordion button">Doubt solving sessions</p>
-          <div class="panel">
-            <p>
-              Solve seemingly difficult questions with relative ease. Learn useful Question
-              selection tops to choose the easiest questions to save crucial time.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="future">
-      <div class="future__top">
-        <h2 class="container section__title">BUILD A STRONG BASE FOR YOUR FUTURE</h2>
-        <p class="container section__description">We Care, We Share, for the Future, We Prepare</p>
-      </div>
-      <div class="future__bottom container">
-        <div class="bottom__cat">
-          <div class="img__con">
-            <img src="assets/images/f01.webp" alt="" class="future__img" />
-          </div>
-          <p class="future__title"><span class="title__num"> 01 </span> Personalized attention</p>
-          <p class="future__des">
-            We provide all individual students one to one advice & attention. Which help their
-            growth.
-          </p>
-        </div>
-        <div class="bottom__cat">
-          <div class="img__con">
-            <img src="assets/images/f02.webp" alt="" class="future__img" />
-          </div>
-          <p class="future__title"><span class="title__num"> 02 </span> Creative Thinking</p>
-          <p class="future__des">
-            We help them discover new solutions & ways of overcoming problems.
-          </p>
-        </div>
-        <div class="bottom__cat">
-          <div class="img__con">
-            <a href=""> <img src="assets/images/f03.webp" alt="" class="future__img" /> </a>
-          </div>
-          <p class="future__title"><span class="title__num"> 03 </span> Competitive Environment</p>
-          <p class="future__des">
-            We foster an environment where students are encouraged to do better.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="collage">
-      <div class="collage-title-container">
-        <h2 class="section__title">Gallery</h2>
-        <p class="section__description">See and feel it</p>
-      </div>
-      <div class="container collage-container">
-        <div class="collage-image collage-image-1">
-          <img src="assets/images/collage/01.webp" alt="" data-aos="fade-up" />
-        </div>
-        <div class="collage-image collage-image-2">
-          <img src="assets/images/collage/02.webp" alt="" data-aos="fade-up" />
-        </div>
-        <div class="collage-image collage-image-3">
-          <img src="assets/images/collage/03.webp" alt="" data-aos="fade-up" />
-        </div>
-        <div class="collage-image collage-image-4">
-          <img src="assets/images/collage/04.webp" alt="" data-aos="fade-up" />
-        </div>
-        <div class="collage-image collage-image-5">
-          <img src="assets/images/collage/05.webp" alt="" data-aos="fade-up" />
-        </div>
-        <div class="collage-image collage-image-6">
-          <img src="assets/images/collage/06.webp" alt="" data-aos="fade-up" />
-        </div>
-        <div class="collage-image collage-image-7">
-          <img src="assets/images/collage/07.webp" alt="" data-aos="fade-up" />
-        </div>
-      </div>
-    </section>
-
-    <section class="registration">
-      <div class="container registration__container">
-        <div class="registration-flex" data-aos="fade-right">
-          <h2 class="reg__title">Register Now</h2>
-          <img src="assets/images/half-student.webp" alt="" />
-        </div>
-        <form action="" class="registration-form" data-aos="fade-left">
-          <h2 class="section__title">Enroll Now</h2>
-          <input type="text" class="form-name" id="form-name" placeholder="Name" />
-          <input type="text" class="form-email" id="form-email" placeholder="Email" />
-          <input type="text" class="form-phone" id="form-phone" placeholder="Contact Number" />
-          <select class="form-class" name="Select Class" id="form-class">
-            <option value>Select Class</option>
-            <option value="class6">Class 6</option>
-            <option value="class7">Class 7</option>
-            <option value="class8">Class 8</option>
-            <option value="class9">Class 9</option>
-            <option value="class10">Class 10</option>
-            <option value="class11">Class 11</option>
-            <option value="class12">Class 12</option>
-          </select>
-          <input type="text" class="form-message" id="form-message" placeholder="Message" />
-          <button type="submit" class="form-submit button" id="form-submit">Submit</button>
-        </form>
-      </div>
-    </section>
-
-    <section class="success">
-      <div class="container success__container">
-        <div class="success-left" data-aos="fade-right">
-          <a href="https://www.youtube.com/watch?v=xcJtL7QggTI" target="_blank" class="img__con">
-            <img src="assets/images/success2.webp" alt="" class="left__image" data-aos="fade-up" />
-          </a>
-          <div class="left__numbers" data-aos="fade-up">
-            <div class="numbers__number">
-              <p class="number">2500+</p>
-              <p class="number-cat">Students</p>
+      <!-- <section class="navsec">
+         <nav class="navbar">
+            <div class="hamburger" id="hamburger"></div>
+            <div class="nav-logo">
+               <img src="assets/images/logo.png" alt="" />
             </div>
-            <div class="numbers__number">
-              <p class="number">30+</p>
-              <p class="number-cat">Staff</p>
+            <ul class="nav-links" id="navLinks">
+               <a href="#">
+                  <li class="nav__link">Home</li>
+               </a>
+               <a href="pages/overview.html">
+                  <li class="nav__link">Overview</li>
+               </a>
+               <a href="pages/admission.html">
+                  <li class="nav__link">Admissions</li>
+               </a>
+               <a href="pages/courses.html">
+                  <li class="nav__link">Courses</li>
+               </a>
+               <a href="pages/student.html">
+                  <li class="nav__link">Student Corner</li>
+                  <ul class="sub-list">
+                     <li class="sub-list-item"><a href="">Study Material</a></li>
+                     <li class="sub-list-item"><a href="">PN Advantages</a></li>
+                     <li class="sub-list-item"><a href="">Alumni Registration</a></li>
+                     <li class="sub-list-item"><a href="">Give Us Review</a></li>
+                     <li class="sub-list-item"><a href="">Testimonials</a></li>
+                  </ul>
+               </a>
+               <a href="pages/result.html">
+                  <li class="nav__link">Results</li>
+               </a>
+               <a href="pages/career.html">
+                  <li class="nav__link">Career</li>
+               </a>
+               <a href="pages/contact.html">
+                  <li class="nav__link">Contact Us</li>
+               </a>
+            </ul>
+         </nav>
+      </section> -->
+
+      <section class="hero">
+         <img src="assets/images/01.webp" alt="" />
+         <img src="assets/images/02.webp" alt="" />
+         <img src="assets/images/03.webp" alt="" />
+         <img src="assets/images/04.webp" alt="" />
+      </section>
+
+      <section class="unione">
+         <div class="container unione__container">
+            <div class="unionecat">
+               <img src="assets/images/unione/education.png" alt="" />
+               <div class="unionecat__text">
+                  <p class="unionecat__title">Best Education</p>
+                  <p class="unionecat__des">
+                     Quality is never an accident; it is the result of intelligent effort
+                  </p>
+               </div>
             </div>
-            <!-- <div class="numbers__number">
+            <div class="unionecat">
+               <img src="assets/images/unione/teacher.png" alt="" />
+               <div class="unionecat__text">
+                  <p class="unionecat__title">Top Faculties</p>
+                  <p class="unionecat__des">
+                     Teaching kids to count is fine bt teaching them what counts is best
+                  </p>
+               </div>
+            </div>
+            <div class="unionecat">
+               <img src="assets/images/unione/online.png" alt="" />
+               <div class="unionecat__text">
+                  <p class="unionecat__title">Online Education</p>
+                  <p class="unionecat__des">
+                     It enables you to study from the place of your convenience
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="about" data-aos="fade-up">
+         <div class="container about__container">
+            <img
+               src="assets/images/aboutbanner.webp"
+               alt=""
+               class="aboutbanner"
+               data-aos="fade-right"
+            />
+            <div class="about__right" data-aos="fade-left">
+               <p class="about__name">About Us</p>
+               <p class="about__tag">
+                  Education is not preparation for life; education is life itself
+               </p>
+               <p class="about__des">
+                  P. N. Institute, educates its students in the fields of Science, Commerce, Arts &
+                  Engineering to discover and transmit knowledge and to make lasting contributions
+                  in our society through critical thinking and innovation. The core values of our
+                  teaching consists of four basic values: dignity, truthfulness, fairness and
+                  responsibility.
+               </p>
+               <p class="button">Read More</p>
+            </div>
+         </div>
+      </section>
+
+      <section class="standards" data-aos="fade-up">
+         <div class="container">
+            <h2 class="section__title">Standards We Teach</h2>
+            <p class="section__description">
+               PN Institute is an established name in IIT | JEE | NEET | FOUNDATION | BOARD
+               preparation, guiding students of 6 | 7 | 8 | 9 | 10 | 11 – 12 A & B Group Science
+               since 2012.
+            </p>
+            <div class="container standards__container">
+               <div class="standards__standard">
+                  <p class="standard__image">Class 5</p>
+                  <p class="standard__name">Class V</p>
+                  <span class="button">Read More</span>
+               </div>
+               <div class="standards__standard">
+                  <p class="standard__image">Class 6</p>
+                  <p class="standard__name">Class VI</p>
+                  <span class="button">Read More</span>
+               </div>
+               <div class="standards__standard">
+                  <p class="standard__image">Class 7</p>
+                  <p class="standard__name">Class VII</p>
+                  <span class="button">Read More</span>
+               </div>
+               <div class="standards__standard">
+                  <p class="standard__image">Class 8</p>
+                  <p class="standard__name">Class VIII</p>
+                  <span class="button">Read More</span>
+               </div>
+               <div class="standards__standard">
+                  <p class="standard__image">Class 9</p>
+                  <p class="standard__name">Class IX</p>
+                  <span class="button">Read More</span>
+               </div>
+               <div class="standards__standard">
+                  <p class="standard__image">Class 10</p>
+                  <p class="standard__name">Class X</p>
+                  <span class="button">Read More</span>
+               </div>
+               <div class="standards__standard">
+                  <p class="standard__image">Class 11</p>
+                  <p class="standard__name">Class XI</p>
+                  <span class="button">Read More</span>
+               </div>
+               <div class="standards__standard">
+                  <p class="standard__image">Class 12</p>
+                  <p class="standard__name">Class XII</p>
+                  <span class="button">Read More</span>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="tag-line" data-aos="fade-up">
+         <div class="container tag-line__container">
+            <div class="tag" data-aos="fade-up">
+               <b> Vadoara’s most trusted name in academics </b> offering the best classroom
+               learning experience.
+            </div>
+            <div class="col" data-aos="fade-up">
+               <a href="" class="join-button">Join PN</a>
+            </div>
+         </div>
+      </section>
+
+      <section class="real" data-aos="fade-up">
+         <div class="section__title container">
+            For Every Student, Every Classroom. Real Results.
+         </div>
+         <div class="container real__container">
+            <div class="realcat" data-aos="fade-right">
+               <p class="realcat__title">CCTV Monitoring</p>
+               <p class="realcat__des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+               <p class="button">Read More</p>
+            </div>
+            <div class="realcat" data-aos="fade-left">
+               <p class="realcat__title">Best teachers</p>
+               <p class="realcat__des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+               <p class="button">Read More</p>
+            </div>
+            <div class="realcat" data-aos="fade-right">
+               <p class="realcat__title">Live Q&A</p>
+               <p class="realcat__des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+               <p class="button">Read More</p>
+            </div>
+            <div class="realcat" data-aos="fade-left">
+               <p class="realcat__title">Class Notes</p>
+               <p class="realcat__des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+               <p class="button">Read More</p>
+            </div>
+            <div class="realcat" data-aos="fade-right">
+               <p class="realcat__title">Library</p>
+               <p class="realcat__des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+               <p class="button">Read More</p>
+            </div>
+            <div class="realcat" data-aos="fade-left">
+               <p class="realcat__title">Personal Attention</p>
+               <p class="realcat__des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+               <p class="button">Read More</p>
+            </div>
+         </div>
+      </section>
+
+      <section class="why" data-aos="fade-up">
+         <h2 class="section__title">Why Choose PNI</h2>
+         <p class="container section__description">
+            We intend to educate students for the future and bring our current creative practices to
+            bear on today’s most critical social, political and environmental challenges.
+         </p>
+         <div class="container why-us__container">
+            <div class="accordion__wrap" data-aos="fade-right">
+               <p class="accordion button">Integrated Teaching Approach</p>
+               <div class="panel">
+                  <p>
+                     Our teaching methodology is very holistic & unique that it inculcates not only
+                     insightful classroom discussions but also excellent study material.
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion__wrap" data-aos="fade-left">
+               <p class="accordion button">Motivational Sessions</p>
+               <div class="panel">
+                  <p>
+                     Honorable Parth Bansal Sir himself conducts such sessions & makes sure that
+                     each student gets motivated to face competitive Exams confidently.
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion__wrap" data-aos="fade-right">
+               <p class="accordion button">Disciplined Learning Environment</p>
+               <div class="panel">
+                  <p>
+                     P. N. Institute focuses on a positive environment where an individual can learn
+                     as well as grow. We follow a good work ethics atmosphere for students.
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion__wrap" data-aos="fade-left">
+               <p class="accordion button">Comprehensive testing system</p>
+               <div class="panel">
+                  <p>
+                     Term tests which are long syllabus tests are common for all students, they are
+                     conducted to give real test environment experience.
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion__wrap" data-aos="fade-right">
+               <p class="accordion button">Doubt solving sessions</p>
+               <div class="panel">
+                  <p>
+                     Solve seemingly difficult questions with relative ease. Learn useful Question
+                     selection tops to choose the easiest questions to save crucial time.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="future">
+         <div class="future__top">
+            <h2 class="container section__title">BUILD A STRONG BASE FOR YOUR FUTURE</h2>
+            <p class="container section__description">
+               We Care, We Share, for the Future, We Prepare
+            </p>
+         </div>
+         <div class="future__bottom container">
+            <div class="bottom__cat">
+               <div class="img__con">
+                  <img src="assets/images/f01.webp" alt="" class="future__img" />
+               </div>
+               <p class="future__title">
+                  <span class="title__num"> 01 </span> Personalized attention
+               </p>
+               <p class="future__des">
+                  We provide all individual students one to one advice & attention. Which help their
+                  growth.
+               </p>
+            </div>
+            <div class="bottom__cat">
+               <div class="img__con">
+                  <img src="assets/images/f02.webp" alt="" class="future__img" />
+               </div>
+               <p class="future__title"><span class="title__num"> 02 </span> Creative Thinking</p>
+               <p class="future__des">
+                  We help them discover new solutions & ways of overcoming problems.
+               </p>
+            </div>
+            <div class="bottom__cat">
+               <div class="img__con">
+                  <a href=""> <img src="assets/images/f03.webp" alt="" class="future__img" /> </a>
+               </div>
+               <p class="future__title">
+                  <span class="title__num"> 03 </span> Competitive Environment
+               </p>
+               <p class="future__des">
+                  We foster an environment where students are encouraged to do better.
+               </p>
+            </div>
+         </div>
+      </section>
+
+      <section class="collage">
+         <div class="collage-title-container">
+            <h2 class="section__title">Gallery</h2>
+            <p class="section__description">See and feel it</p>
+         </div>
+         <div class="container collage-container">
+            <div class="collage-image collage-image-1">
+               <img src="assets/images/collage/01.webp" alt="" data-aos="fade-up" />
+            </div>
+            <div class="collage-image collage-image-2">
+               <img src="assets/images/collage/02.webp" alt="" data-aos="fade-up" />
+            </div>
+            <div class="collage-image collage-image-3">
+               <img src="assets/images/collage/03.webp" alt="" data-aos="fade-up" />
+            </div>
+            <div class="collage-image collage-image-4">
+               <img src="assets/images/collage/04.webp" alt="" data-aos="fade-up" />
+            </div>
+            <div class="collage-image collage-image-5">
+               <img src="assets/images/collage/05.webp" alt="" data-aos="fade-up" />
+            </div>
+            <div class="collage-image collage-image-6">
+               <img src="assets/images/collage/06.webp" alt="" data-aos="fade-up" />
+            </div>
+            <div class="collage-image collage-image-7">
+               <img src="assets/images/collage/07.webp" alt="" data-aos="fade-up" />
+            </div>
+         </div>
+      </section>
+
+      <section class="registration">
+         <div class="container registration__container">
+            <div class="registration-flex" data-aos="fade-right">
+               <h2 class="reg__title">Register Now</h2>
+               <img src="assets/images/half-student.webp" alt="" />
+            </div>
+            <form action="" class="registration-form" data-aos="fade-left">
+               <h2 class="section__title">Enroll Now</h2>
+               <input type="text" class="form-name" id="form-name" placeholder="Name" />
+               <input type="text" class="form-email" id="form-email" placeholder="Email" />
+               <input type="text" class="form-phone" id="form-phone" placeholder="Contact Number" />
+               <select class="form-class" name="Select Class" id="form-class">
+                  <option value>Select Class</option>
+                  <option value="class6">Class 6</option>
+                  <option value="class7">Class 7</option>
+                  <option value="class8">Class 8</option>
+                  <option value="class9">Class 9</option>
+                  <option value="class10">Class 10</option>
+                  <option value="class11">Class 11</option>
+                  <option value="class12">Class 12</option>
+               </select>
+               <!-- <input type="text" class="form-message" id="form-message" placeholder="Message" /> -->
+               <textarea
+                  name=""
+                  id="form-message"
+                  cols="30"
+                  rows="5"
+                  class="form-message"
+                  placeholder="Message"
+               ></textarea>
+               <button type="submit" class="form-submit button" id="form-submit">Submit</button>
+            </form>
+         </div>
+      </section>
+
+      <section class="success">
+         <div class="container success__container">
+            <div class="success-left" data-aos="fade-right">
+               <a
+                  href="https://www.youtube.com/watch?v=xcJtL7QggTI"
+                  target="_blank"
+                  class="img__con"
+               >
+                  <img
+                     src="assets/images/success2.webp"
+                     alt=""
+                     class="left__image"
+                     data-aos="fade-up"
+                  />
+               </a>
+               <div class="left__numbers" data-aos="fade-up">
+                  <div class="numbers__number">
+                     <p class="number">2500+</p>
+                     <p class="number-cat">Students</p>
+                  </div>
+                  <div class="numbers__number">
+                     <p class="number">30+</p>
+                     <p class="number-cat">Staff</p>
+                  </div>
+                  <!-- <div class="numbers__number">
 						<p class="number">88</p>
 						<p class="number-cat">Locations</p>
 					</div> -->
-          </div>
-        </div>
-        <div class="success-right" data-aos="fade-left">
-          <p class="section__description">Success Stories</p>
-          <h2 class="section__title">Our Students</h2>
-          <div class="success__carousels">
-            <div class="carousel">
-              <p class="success_text">
-                My experience at PN Institute is great & memorable, the mentors also helped me
-                enhance my interpersonal skills.
-              </p>
-              <div class="nameandphoto">
-                <img src="assets/images/success/vani.jpg" alt="" class="photo" />
-                <div class="nameandpost">
-                  <p class="name">Vani Darji</p>
-                  <p class="post">Student</p>
-                </div>
-              </div>
+               </div>
             </div>
-            <div class="carousel">
-              <p class="success_text">
-                My 4 years at PNI were great and a memory to cherish for a lifetime. It was full of
-                learning and grooming oneself.
-              </p>
-              <div class="nameandphoto">
-                <img src="assets/images/success/jay.jpg" alt="" class="photo" />
-                <div class="nameandpost">
-                  <p class="name">Jay Parekh</p>
-                  <p class="post">Student</p>
-                </div>
-              </div>
+            <div class="success-right" data-aos="fade-left">
+               <p class="section__description">Success Stories</p>
+               <h2 class="section__title">Our Students</h2>
+               <div class="success__carousels">
+                  <div class="carousel">
+                     <p class="success_text">
+                        My experience at PN Institute is great & memorable, the mentors also helped
+                        me enhance my interpersonal skills.
+                     </p>
+                     <div class="nameandphoto">
+                        <img src="assets/images/success/vani.jpg" alt="" class="photo" />
+                        <div class="nameandpost">
+                           <p class="name">Vani Darji</p>
+                           <p class="post">Student</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel">
+                     <p class="success_text">
+                        My 4 years at PNI were great and a memory to cherish for a lifetime. It was
+                        full of learning and grooming oneself.
+                     </p>
+                     <div class="nameandphoto">
+                        <img src="assets/images/success/jay.jpg" alt="" class="photo" />
+                        <div class="nameandpost">
+                           <p class="name">Jay Parekh</p>
+                           <p class="post">Student</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel">
+                     <p class="success_text">
+                        PN Institute and set faculties have put in all the efforts to groom us and
+                        make us mature individuals.
+                     </p>
+                     <div class="nameandphoto">
+                        <img src="assets/images/success/vaishnavi.jpg" alt="" class="photo" />
+                        <div class="nameandpost">
+                           <p class="name">Vaishnavi Patil</p>
+                           <p class="post">Student</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel">
+                     <p class="success_text">
+                        Think Different, that is one thing that PNI urges in and to far extent
+                        succeeded in teaching to its students.
+                     </p>
+                     <div class="nameandphoto">
+                        <img src="assets/images/success/ritika.jpg" alt="" class="photo" />
+                        <div class="nameandpost">
+                           <p class="name">Ritika Khushwaha</p>
+                           <p class="post">Student</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="carousel">
-              <p class="success_text">
-                PN Institute and set faculties have put in all the efforts to groom us and make us
-                mature individuals.
-              </p>
-              <div class="nameandphoto">
-                <img src="assets/images/success/vaishnavi.jpg" alt="" class="photo" />
-                <div class="nameandpost">
-                  <p class="name">Vaishnavi Patil</p>
-                  <p class="post">Student</p>
-                </div>
-              </div>
+         </div>
+      </section>
+
+      <section class="footer">
+         <div class="container footer-top">
+            <div class="ft-left">
+               <p class="left-up">Apply For The Largest Scholarship Exam Of Gujarat</p>
+               <p class="left-down">
+                  PSAT is a State level brilliance discovering exam that helps students to bring out
+                  the best in themselves and to recognize their hidden abilities.
+               </p>
             </div>
-            <div class="carousel">
-              <p class="success_text">
-                Think Different, that is one thing that PNI urges in and to far extent succeeded in
-                teaching to its students.
-              </p>
-              <div class="nameandphoto">
-                <img src="assets/images/success/ritika.jpg" alt="" class="photo" />
-                <div class="nameandpost">
-                  <p class="name">Ritika Khushwaha</p>
-                  <p class="post">Student</p>
-                </div>
-              </div>
+            <div class="ft-right">
+               <div class="ft-con">Apply Now</div>
             </div>
-          </div>
-        </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="container bottom__container">
+               <div class="tp">
+                  <div class="footer__about">
+                     <img src="assets/images/logo.png" alt="" />
+                     <p class="footer__about_des">
+                        P. N. Institute, educates its students in the fields of Science, Commerce,
+                        Arts & Engineering to discover and transmit knowledge.
+                     </p>
+                     <div class="social">
+                        <a href="https://www.facebook.com/pninstitute/" target="_blank"
+                           ><img src="assets/images/social/fb.png" alt=""
+                        /></a>
+                        <a href="" target="_blank"
+                           ><img src="assets/images/social/twitter.png" alt=""
+                        /></a>
+                        <a href="https://www.instagram.com/p.n.institute/" target="_blank"
+                           ><img src="assets/images/social/insta.png" alt=""
+                        /></a>
+                        <a href="" target="_blank"
+                           ><img src="assets/images/social/youtube.png" alt=""
+                        /></a>
+                     </div>
+                  </div>
+                  <div class="footer__address">
+                     <p class="footer__section__title">Address</p>
+                     <a href="https://goo.gl/maps/LwFHkTE93TcSSCdJ9">
+                        <p class="addressline">Gajanan Heights,</p>
+                        <p class="addressline">Nr Darbar Chokdi,</p>
+                        <p class="addressline">Manjalpur, Vadodara - 390011</p>
+                     </a>
+                     <br />
+                     <p class="addressline"><a href="tel:+919924455528"> +91 9924455528 </a></p>
+                     <p class="addressline"><a href="tel:+918401105528"> +91 8401105528 </a></p>
+                     <p class="addressline">
+                        <a href="mailto:contact@pninstitute.in"> contact@pninstitute.in </a>
+                     </p>
+                  </div>
+                  <div class="footer__links__con">
+                     <p class="footer__section__title">Explore</p>
+                     <ul class="footer__links">
+                        <a href="pages/admission.html" class="footer__link">
+                           <li>Admission</li>
+                        </a>
+                        <a href="pages/courses.html" class="footer__link">
+                           <li>Courses</li>
+                        </a>
+                        <a href="pages/student.html" class="footer__link">
+                           <li>Student Corner</li>
+                        </a>
+                        <a href="pages/result.html" class="footer__link">
+                           <li>Result</li>
+                        </a>
+                        <a href="pages/career.html" class="footer__link">
+                           <li>Career</li>
+                        </a>
+                        <a href="pages/faq.html" class="footer__link">
+                           <li>FAQs</li>
+                        </a>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="copyright">
+         <div class="container">&copy; PN Institute</div>
+      </section>
+
+      <div class="brochure">
+         <a href="#" class="button">Download Brochure</a>
       </div>
-    </section>
 
-    <section class="footer">
-      <div class="container footer-top">
-        <div class="ft-left">
-          <p class="left-up">Apply For The Largest Scholarship Exam Of Gujarat</p>
-          <p class="left-down">
-            PSAT is a State level brilliance discovering exam that helps students to bring out the
-            best in themselves and to recognize their hidden abilities.
-          </p>
-        </div>
-        <div class="ft-right">
-          <div class="ft-con">Apply Now</div>
-        </div>
+      <div class="floating">
+         <a href="https://wa.me/918000670336"
+            ><img src="assets/images/whatsapp.png" alt="" class="wa"
+         /></a>
       </div>
-      <div class="footer-bottom">
-        <div class="container bottom__container">
-          <div class="tp">
-            <div class="footer__about">
-              <img src="assets/images/logo.png" alt="" />
-              <p class="footer__about_des">
-                P. N. Institute, educates its students in the fields of Science, Commerce, Arts &
-                Engineering to discover and transmit knowledge.
-              </p>
-              <div class="social">
-                <a href="https://www.facebook.com/pninstitute/" target="_blank"
-                  ><img src="assets/images/social/fb.png" alt=""
-                /></a>
-                <a href="" target="_blank"><img src="assets/images/social/twitter.png" alt="" /></a>
-                <a href="https://www.instagram.com/p.n.institute/" target="_blank"
-                  ><img src="assets/images/social/insta.png" alt=""
-                /></a>
-                <a href="" target="_blank"><img src="assets/images/social/youtube.png" alt="" /></a>
-              </div>
-            </div>
-            <div class="footer__address">
-              <p class="footer__section__title">Address</p>
-              <a href="https://goo.gl/maps/LwFHkTE93TcSSCdJ9">
-                <p class="addressline">Gajanan Heights,</p>
-                <p class="addressline">Nr Darbar Chokdi,</p>
-                <p class="addressline">Manjalpur, Vadodara - 390011</p>
-              </a>
-              <br />
-              <p class="addressline"><a href="tel:+919924455528"> +91 9924455528 </a></p>
-              <p class="addressline"><a href="tel:+918401105528"> +91 8401105528 </a></p>
-              <p class="addressline">
-                <a href="mailto:contact@pninstitute.in"> contact@pninstitute.in </a>
-              </p>
-            </div>
-            <div class="footer__links__con">
-              <p class="footer__section__title">Explore</p>
-              <ul class="footer__links">
-                <a href="pages/admission.html" class="footer__link">
-                  <li>Admission</li>
-                </a>
-                <a href="pages/courses.html" class="footer__link">
-                  <li>Courses</li>
-                </a>
-                <a href="pages/student.html" class="footer__link">
-                  <li>Student Corner</li>
-                </a>
-                <a href="pages/result.html" class="footer__link">
-                  <li>Result</li>
-                </a>
-                <a href="pages/career.html" class="footer__link">
-                  <li>Career</li>
-                </a>
-                <a href="pages/faq.html" class="footer__link">
-                  <li>FAQs</li>
-                </a>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="copyright">
-      <div class="container">&copy; PN Institute</div>
-    </section>
-
-    <div class="brochure">
-      <a href="#" class="button">Download Brochure</a>
-    </div>
-
-    <div class="floating">
-      <a href="https://wa.me/918000670336"
-        ><img src="assets/images/whatsapp.png" alt="" class="wa"
-      /></a>
-    </div>
-    <script src="dist/jquery.min.js"></script>
-    <script src="dist/jquery-migrate.min.js"></script>
-    <script src="dist/slick.min.js"></script>
-    <script src="dist/slick-slide.js"></script>
-    <script src="dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 800,
-      });
-    </script>
-    <script src="dist/script.js"></script>
-  </body>
+      <script src="dist/jquery.min.js"></script>
+      <script src="dist/jquery-migrate.min.js"></script>
+      <script src="dist/slick.min.js"></script>
+      <script src="dist/slick-slide.js"></script>
+      <script src="dist/aos.js"></script>
+      <script>
+         AOS.init({
+            duration: 800,
+         });
+      </script>
+      <script src="dist/script.js"></script>
+   </body>
 </html>
