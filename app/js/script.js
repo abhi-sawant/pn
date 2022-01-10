@@ -71,15 +71,3 @@ const postApplied = document.querySelector("#postApplied");
 function carSel(carOption) {
    postApplied.value = carOption;
 }
-
-// console.log(window.innerWidth);
-// var futureImg = document.getElementsByClassName("future__img");
-// console.log(futureImg);
-// var futureHeight = document.getElementById("futureImg1").height;
-// console.log(futureHeight);
-
-// if (window.innerWidth > 639) {
-// 	for (i = 0; i < futureImg.length; i++) {
-// 		futureImg[i].style.marginTop = "-" + futureHeight + "px";
-// 	}
-// }
