@@ -1,3 +1,4 @@
 node_modules/
 changes/
 not_to_publish/
+dist/*.map
