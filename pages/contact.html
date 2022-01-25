@@ -7,63 +7,11 @@
       <link rel="icon" href="../favicon.ico" type="image/x-icon" />
       <title>Contact Us - PN Institute</title>
       <link rel="stylesheet" href="../dist/slick.css" />
-      <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
       <link rel="stylesheet" href="../dist/style.css" />
    </head>
 
    <body>
-      <nav>
-         <div class="navbar">
-            <i class="bx bx-menu"></i>
-            <div class="logo">
-               <a href="#"><img src="../assets/images/logo.png" alt="" /></a>
-            </div>
-            <div class="nav-links">
-               <div class="sidebar-logo">
-                  <!-- <span class="logo-name">CodingLab</span> -->
-                  <img src="../assets/images/logo.png" alt="" />
-                  <i class="bx bx-x"></i>
-               </div>
-               <ul class="links">
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="overview.html">Overview</a></li>
-                  <li><a href="admission.html">Admission</a></li>
-                  <li><a href="courses.html">Courses</a></li>
-                  <li>
-                     <a href="#">Student Corner</a>
-                     <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
-                     <ul class="htmlCss-sub-menu sub-menu">
-                        <li><a href="student.html#material">Study material</a></li>
-                        <li><a href="student.html#pnAdvantages">PN Advantages</a></li>
-                        <li><a href="student.html#alumni">Alumni Registration</a></li>
-                        <li><a href="student.html#review">Give Us a Review</a></li>
-                        <li><a href="student.html#testimonials">Testimonials</a></li>
-                        <!-- <li class="more">
-                         <span><a href="#">More</a>
-                         <i class='bx bxs-chevron-right arrow more-arrow'></i>
-                       </span>
-                         <ul class="more-sub-menu sub-menu">
-                           <li><a href="#">Neumorphism</a></li>
-                           <li><a href="#">Pre-loader</a></li>
-                           <li><a href="#">Glassmorphism</a></li>
-                         </ul>
-                       </li> -->
-                     </ul>
-                  </li>
-                  <li><a href="result.html">Results</a></li>
-                  <li><a href="career.html">Career</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-               </ul>
-            </div>
-            <!-- <div class="search-box">
-             <i class='bx bx-search'></i>
-             <div class="input-box">
-               <input type="text" placeholder="Search...">
-             </div>
-           </div> -->
-         </div>
-      </nav>
-      <!-- <section class="navsec">
+      <section class="navsec">
          <nav class="navbar">
             <div class="hamburger" id="hamburger"></div>
             <div class="nav-logo">
@@ -82,8 +30,27 @@
                <a href="courses.html">
                   <li class="nav__link">Courses</li>
                </a>
-               <a href="student.html">
-                  <li class="nav__link">Student Corner</li>
+               <a href="#">
+                  <li class="nav__link sub-list-parent" id="subListHandle">
+                     Student Corner <span class="down-arrow">&gt;</span>
+                     <ul class="sub-list" id="subList">
+                        <li class="sub-list-item">
+                           <a href="student.html#material">Study Material</a>
+                        </li>
+                        <li class="sub-list-item">
+                           <a href="student.html#pnAdvantages">PN Advantages</a>
+                        </li>
+                        <li class="sub-list-item">
+                           <a href="student.html#alumni">Alumni Registration</a>
+                        </li>
+                        <li class="sub-list-item">
+                           <a href="student.html#review">Give Us Review</a>
+                        </li>
+                        <li class="sub-list-item">
+                           <a href="student.html#testimonials">Testimonials</a>
+                        </li>
+                     </ul>
+                  </li>
                </a>
                <a href="result.html">
                   <li class="nav__link">Results</li>
@@ -96,7 +63,7 @@
                </a>
             </ul>
          </nav>
-      </section> -->
+      </section>
 
       <section class="contact__title page__title">
          <div class="container">
@@ -161,11 +128,7 @@
       <section class="success">
          <div class="container success__container">
             <div class="success-left" data-aos="fade-right">
-               <a
-                  href="../assets/PN_Video.mp4"
-                  target="_blank"
-                  class="img__con"
-               >
+               <a href="../assets/PN_Video.mp4" target="_blank" class="img__con">
                   <img
                      src="../assets/images/success2.webp"
                      alt=""
@@ -260,7 +223,8 @@
             </div>
             <div class="ft-right">
                <a href="https://psat.pninstitute.in/" target="_blank">
-               <div class="ft-con">  Apply Now  </div></a>
+                  <div class="ft-con">Apply Now</div></a
+               >
             </div>
          </div>
          <div class="footer-bottom">

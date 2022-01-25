@@ -1,17 +1,29 @@
-// var ham = document.getElementById("hamburger");
-// var navLinks = document.getElementById("navLinks");
+var ham = document.getElementById("hamburger");
+var navLinks = document.getElementById("navLinks");
+var subListHandle = document.getElementById("subListHandle");
+var subList = document.getElementById("subList");
 
-// ham.addEventListener("click", function () {
-//    if (navLinks.style.maxHeight) {
-//       navLinks.style.maxHeight = null;
-//       ham.style.width = "25px";
-//    } else {
-//       navLinks.style.maxHeight = navLinks.scrollHeight + "px";
-//       ham.style.width = "21px";
-//    }
-// });
+ham.addEventListener("click", function () {
+   if (navLinks.style.maxHeight) {
+      navLinks.style.maxHeight = null;
+      ham.style.width = "25px";
+   } else {
+      navLinks.style.maxHeight = navLinks.scrollHeight + "px";
+      ham.style.width = "21px";
+   }
+});
 
-let navbar = document.querySelector(".navbar");
+subListHandle.addEventListener("click", function () {
+   // if (subList.style.maxHeight) {
+   //    subList.style.maxHeight = null;
+   // } else {
+   //    subList.style.maxHeight = subList.scrollHeight + "px";
+   //    navLinks.style.maxHeight = navLinks.scrollHeight + "px";
+   // }
+   subList.classList.toggle("max-height");
+});
+
+// let navbar = document.querySelector(".navbar");
 // let searchBox = document.querySelector(".search-box .bx-search");
 // // let searchBoxCancel = document.querySelector(".search-box .bx-x");
 
@@ -25,22 +37,21 @@ let navbar = document.querySelector(".navbar");
 // });
 
 // sidebar open close js code
-let navLinks = document.querySelector(".nav-links");
-let menuOpenBtn = document.querySelector(".navbar .bx-menu");
-let menuCloseBtn = document.querySelector(".nav-links .bx-x");
-menuOpenBtn.onclick = function() {
-navLinks.style.left = "0";
-}
-menuCloseBtn.onclick = function() {
-navLinks.style.left = "-100%";
-}
-
+// let navLinks = document.querySelector(".nav-links");
+// let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+// let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+// menuOpenBtn.onclick = function () {
+//    navLinks.style.left = "0";
+// };
+// menuCloseBtn.onclick = function () {
+//    navLinks.style.left = "-100%";
+// };
 
 // sidebar submenu open close js code
-let htmlcssArrow = document.querySelector(".htmlcss-arrow");
-htmlcssArrow.onclick = function() {
- navLinks.classList.toggle("show1");
-}
+// let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+// htmlcssArrow.onclick = function () {
+//    navLinks.classList.toggle("show1");
+// };
 // let moreArrow = document.querySelector(".more-arrow");
 // moreArrow.onclick = function() {
 //  navLinks.classList.toggle("show2");

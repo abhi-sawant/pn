@@ -7,63 +7,11 @@
       <link rel="icon" href="../favicon.ico" type="image/x-icon" />
       <title>Courses - PN Institute</title>
       <link rel="stylesheet" href="../dist/slick.css" />
-      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
       <link rel="stylesheet" href="../dist/style.css" />
    </head>
 
    <body>
-      <nav>
-         <div class="navbar">
-            <i class="bx bx-menu"></i>
-            <div class="logo">
-               <a href="#"><img src="../assets/images/logo.png" alt="" /></a>
-            </div>
-            <div class="nav-links">
-               <div class="sidebar-logo">
-                  <!-- <span class="logo-name">CodingLab</span> -->
-                  <img src="../assets/images/logo.png" alt="" />
-                  <i class="bx bx-x"></i>
-               </div>
-               <ul class="links">
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="overview.html">Overview</a></li>
-                  <li><a href="admission.html">Admission</a></li>
-                  <li><a href="courses.html">Courses</a></li>
-                  <li>
-                     <a href="#">Student Corner</a>
-                     <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
-                     <ul class="htmlCss-sub-menu sub-menu">
-                        <li><a href="student.html#material">Study material</a></li>
-                        <li><a href="student.html#pnAdvantages">PN Advantages</a></li>
-                        <li><a href="student.html#alumni">Alumni Registration</a></li>
-                        <li><a href="student.html#review">Give Us a Review</a></li>
-                        <li><a href="student.html#testimonials">Testimonials</a></li>
-                        <!-- <li class="more">
-                         <span><a href="#">More</a>
-                         <i class='bx bxs-chevron-right arrow more-arrow'></i>
-                       </span>
-                         <ul class="more-sub-menu sub-menu">
-                           <li><a href="#">Neumorphism</a></li>
-                           <li><a href="#">Pre-loader</a></li>
-                           <li><a href="#">Glassmorphism</a></li>
-                         </ul>
-                       </li> -->
-                     </ul>
-                  </li>
-                  <li><a href="result.html">Results</a></li>
-                  <li><a href="career.html">Career</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-               </ul>
-            </div>
-            <!-- <div class="search-box">
-             <i class='bx bx-search'></i>
-             <div class="input-box">
-               <input type="text" placeholder="Search...">
-             </div>
-           </div> -->
-         </div>
-      </nav>
-      <!-- <section class="navsec">
+      <section class="navsec">
          <nav class="navbar">
             <div class="hamburger" id="hamburger"></div>
             <div class="nav-logo">
@@ -82,8 +30,27 @@
                <a href="#">
                   <li class="nav__link">Courses</li>
                </a>
-               <a href="student.html">
-                  <li class="nav__link">Student Corner</li>
+               <a href="#">
+                  <li class="nav__link sub-list-parent" id="subListHandle">
+                     Student Corner <span class="down-arrow">&gt;</span>
+                     <ul class="sub-list" id="subList">
+                        <li class="sub-list-item">
+                           <a href="student.html#material">Study Material</a>
+                        </li>
+                        <li class="sub-list-item">
+                           <a href="student.html#pnAdvantages">PN Advantages</a>
+                        </li>
+                        <li class="sub-list-item">
+                           <a href="student.html#alumni">Alumni Registration</a>
+                        </li>
+                        <li class="sub-list-item">
+                           <a href="student.html#review">Give Us Review</a>
+                        </li>
+                        <li class="sub-list-item">
+                           <a href="student.html#testimonials">Testimonials</a>
+                        </li>
+                     </ul>
+                  </li>
                </a>
                <a href="result.html">
                   <li class="nav__link">Results</li>
@@ -96,7 +63,7 @@
                </a>
             </ul>
          </nav>
-      </section> -->
+      </section>
 
       <section class="courses__title page__title">
          <div class="container">
@@ -113,19 +80,19 @@
                      <img src="../assets/images/courses/prefound.jpg" alt="" class="image" />
                   </div>
                   <div class="description-container">
-                     <p class="card-title">Standard 6</p>
+                     <p class="card-title">Standard 6-10</p>
                      <!-- <div class="languages">
 							<span class="html">Some title</span>
 						</div> -->
                      <div class="description">
-                        This is a great small challenge to help get you used to building to a
-                        design. There's no JS in this project, so you'll be able to focus on your
-                        HTML & CSS skills.
+                        This course is specifically focused on providing basic understanding and
+                        better insights about different subjects, to provide proper foundation
+                        required for future challenges.
                      </div>
                   </div>
                </div>
                <div class="action-buttons">
-                  <a href="../admissions/std06.html" class="button">Get Admission</a>
+                  <a href="admission.html" class="button">Get Admission</a>
                </div>
             </div>
 
@@ -135,19 +102,18 @@
                      <img src="../assets/images/courses/found.jpg" alt="" class="image" />
                   </div>
                   <div class="description-container">
-                     <p class="card-title">Standard 7</p>
+                     <p class="card-title">Standard 11-12 Commerce</p>
                      <!-- <div class="languages">
 							<span class="html">Some title</span>
 						</div> -->
                      <div class="description">
-                        This is a great small challenge to help get you used to building to a
-                        design. There's no JS in this project, so you'll be able to focus on your
-                        HTML & CSS skills.
+                        This course deals with the various aspects of business, trade, accounting,
+                        financial information/transactions and merchandising.
                      </div>
                   </div>
                </div>
                <div class="action-buttons">
-                  <a href="../admissions/std07.html" class="button">Get Admission</a>
+                  <a href="admission.html" class="button">Get Admission</a>
                </div>
             </div>
 
@@ -157,19 +123,18 @@
                      <img src="../assets/images/courses/integrated.jpg" alt="" class="image" />
                   </div>
                   <div class="description-container">
-                     <p class="card-title">Standard 8</p>
+                     <p class="card-title">Standard 11-12 Arts</p>
                      <!-- <div class="languages">
 							<span class="html">Some title</span>
 						</div> -->
                      <div class="description">
-                        This is a great small challenge to help get you used to building to a
-                        design. There's no JS in this project, so you'll be able to focus on your
-                        HTML & CSS skills.
+                        Course designed for this field is a diverse field of study which includes
+                        subjects ranging from humanities to languages.
                      </div>
                   </div>
                </div>
                <div class="action-buttons">
-                  <a href="../admissions/std08.html" class="button">Get Admission</a>
+                  <a href="admission.html" class="button">Get Admission</a>
                </div>
             </div>
 
@@ -179,19 +144,19 @@
                      <img src="../assets/images/courses/prefound.jpg" alt="" class="image" />
                   </div>
                   <div class="description-container">
-                     <p class="card-title">Standard 9</p>
+                     <p class="card-title">Standard 11-12 Biology</p>
                      <!-- <div class="languages">
 							<span class="html">Some title</span>
 						</div> -->
                      <div class="description">
-                        This is a great small challenge to help get you used to building to a
-                        design. There's no JS in this project, so you'll be able to focus on your
-                        HTML & CSS skills.
+                        This course focuses on providing a firm conceptual basis while also
+                        connecting the study of the subject with real-life technology, environment,
+                        agriculture, health, and industry.
                      </div>
                   </div>
                </div>
                <div class="action-buttons">
-                  <a href="../admissions/std09.html" class="button">Get Admission</a>
+                  <a href="admission.html" class="button">Get Admission</a>
                </div>
             </div>
 
@@ -201,32 +166,28 @@
                      <img src="../assets/images/courses/found.jpg" alt="" class="image" />
                   </div>
                   <div class="description-container">
-                     <p class="card-title">Standard 10</p>
+                     <p class="card-title">Standard 11-12 Maths</p>
                      <!-- <div class="languages">
 							<span class="html">Some title</span>
 						</div> -->
                      <div class="description">
-                        This is a great small challenge to help get you used to building to a
-                        design. There's no JS in this project, so you'll be able to focus on your
-                        HTML & CSS skills.
+                        This course focuses on building concrete basis for the student wanting to
+                        pursue engineering in their further studies.
                      </div>
                   </div>
                </div>
                <div class="action-buttons">
-                  <a href="../admissions/std10.html" class="button">Get Admission</a>
+                  <a href="admission.html" class="button">Get Admission</a>
                </div>
             </div>
 
-            <div class="card">
+            <!-- <div class="card">
                <div class="part-1">
                   <div class="image-container">
                      <img src="../assets/images/courses/integrated.jpg" alt="" class="image" />
                   </div>
                   <div class="description-container">
                      <p class="card-title">Standard 11 (Science)</p>
-                     <!-- <div class="languages">
-							<span class="html">Some title</span>
-						</div> -->
                      <div class="description">
                         This is a great small challenge to help get you used to building to a
                         design. There's no JS in this project, so you'll be able to focus on your
@@ -246,9 +207,6 @@
                   </div>
                   <div class="description-container">
                      <p class="card-title">Standard 12 (Science)</p>
-                     <!-- <div class="languages">
-							<span class="html">Some title</span>
-						</div> -->
                      <div class="description">
                         This is a great small challenge to help get you used to building to a
                         design. There's no JS in this project, so you'll be able to focus on your
@@ -268,9 +226,6 @@
                   </div>
                   <div class="description-container">
                      <p class="card-title">Standard 11 (Commerce)</p>
-                     <!-- <div class="languages">
-							<span class="html">Some title</span>
-						</div> -->
                      <div class="description">
                         This is a great small challenge to help get you used to building to a
                         design. There's no JS in this project, so you'll be able to focus on your
@@ -290,9 +245,6 @@
                   </div>
                   <div class="description-container">
                      <p class="card-title">Standard 12 (Commerce)</p>
-                     <!-- <div class="languages">
-							<span class="html">Some title</span>
-						</div> -->
                      <div class="description">
                         This is a great small challenge to help get you used to building to a
                         design. There's no JS in this project, so you'll be able to focus on your
@@ -312,9 +264,6 @@
                   </div>
                   <div class="description-container">
                      <p class="card-title">Standard 11 (Arts)</p>
-                     <!-- <div class="languages">
-							<span class="html">Some title</span>
-						</div> -->
                      <div class="description">
                         This is a great small challenge to help get you used to building to a
                         design. There's no JS in this project, so you'll be able to focus on your
@@ -334,9 +283,6 @@
                   </div>
                   <div class="description-container">
                      <p class="card-title">Standard 12 (Arts)</p>
-                     <!-- <div class="languages">
-							<span class="html">Some title</span>
-						</div> -->
                      <div class="description">
                         This is a great small challenge to help get you used to building to a
                         design. There's no JS in this project, so you'll be able to focus on your
@@ -347,11 +293,11 @@
                <div class="action-buttons">
                   <a href="../admissions/std12A.html" class="button">Get Admission</a>
                </div>
-            </div>
+            </div> -->
          </div>
       </section>
 
-      <section class="star-teacher">
+      <!-- <section class="star-teacher">
          <h2 class="container section__title">Our Star Teachers</h2>
          <div class="container star-teacher__container">
             <div class="teacher">
@@ -395,7 +341,7 @@
                <p class="teach-ed">M.Ed. Gold Medalist</p>
             </div>
          </div>
-      </section>
+      </section> -->
 
       <!-- <section class="prefound course">
         <div class="container prefound__container course__container">
@@ -648,11 +594,7 @@
       <section class="success">
          <div class="container success__container">
             <div class="success-left" data-aos="fade-right">
-               <a
-                  href="../assets/PN_Video.mp4"
-                  target="_blank"
-                  class="img__con"
-               >
+               <a href="../assets/PN_Video.mp4" target="_blank" class="img__con">
                   <img
                      src="../assets/images/success2.webp"
                      alt=""
@@ -747,7 +689,8 @@
             </div>
             <div class="ft-right">
                <a href="https://psat.pninstitute.in/" target="_blank">
-               <div class="ft-con">  Apply Now  </div></a>
+                  <div class="ft-con">Apply Now</div></a
+               >
             </div>
          </div>
          <div class="footer-bottom">
