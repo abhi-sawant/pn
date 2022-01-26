@@ -1,0 +1,15 @@
+@use "../util" as *;
+
+.hero {
+   display: none;
+   @include breakpoint(medium) {
+      display: block;
+   }
+}
+
+.hero-mobile {
+   display: block;
+   @include breakpoint(medium) {
+      display: none;
+   }
+}
