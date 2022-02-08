@@ -46,7 +46,7 @@
    .footer-bottom {
       z-index: -1111;
       padding: 3em 0;
-      text-align: center;
+      // text-align: center;
       background: linear-gradient(to right, var(--blue), var(--light-blue));
       .bottom__container {
          .bt {
@@ -98,7 +98,7 @@
             }
             .footer__address {
                color: white;
-               text-align: center;
+               // text-align: center;
                .addressline {
                   font-weight: 500;
                   color: #e2e2e2;
@@ -106,9 +106,12 @@
                      color: #e2e2e2;
                   }
                }
+               @include breakpoint(large) {
+                  padding-inline: 2rem;
+               }
             }
             .footer__links__con {
-               text-align: center;
+               // text-align: center;
                .footer__links {
                   list-style-type: none;
                   padding-left: 0;
@@ -121,7 +124,7 @@
                   }
                }
             }
-            @include breakpoint(large) {
+            @include breakpoint(medium) {
                display: grid;
                grid-template-columns: 1fr 1fr 1fr;
                gap: 2em;
