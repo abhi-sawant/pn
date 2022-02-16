@@ -7,6 +7,15 @@
    }
 }
 
+.slick-arrow {
+   content: "abc";
+}
+
+.slick-prev {
+}
+
+.slick-next {
+}
 .hero-mobile {
    display: block;
    @include breakpoint(medium) {

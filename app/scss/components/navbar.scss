@@ -116,6 +116,7 @@
             }
             .sub-list {
                padding-left: 0;
+               padding-top: 1rem;
                list-style-type: none;
                overflow: auto;
                z-index: 111 !important;
@@ -125,6 +126,10 @@
                // padding-top: 0.5rem;
                transition: max-height 0ms;
                max-height: 0;
+               &::-webkit-scrollbar {
+                  width: 0px !important;
+                  background: transparent;
+               }
                @include breakpoint(medium) {
                   position: absolute;
                   &:hover {
@@ -135,7 +140,8 @@
                   margin: 0.3rem 1rem;
 
                   a {
-                     font-size: 0.9rem;
+                     letter-spacing: normal;
+                     font-size: 0.8rem;
                      font-weight: 500;
                      color: var(--blue);
                   }
@@ -171,7 +177,7 @@
             .nav__link {
                display: inline-block;
                // margin: 0.2rem 0.5rem;
-               padding: 0.5em 1em;
+               padding: 0.5em;
             }
          }
       }
