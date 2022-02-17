@@ -42,22 +42,44 @@
    padding: 2em 0;
    .alumni__container {
       .alumni-reg {
-         fieldset {
-            padding: 1em;
+         padding-block: 1em;
+         // display: grid;
+         // grid-auto-flow: row;
+         // gap: 1em;
+         max-width: 900px;
+         margin-inline: auto;
+         margin-bottom: 1em;
+         h2 {
+            margin-block: 1.5rem 0.8rem;
+         }
+         div {
             display: grid;
-            grid-auto-flow: row;
-            gap: 1em;
-            margin-bottom: 1em;
-            input,
-            select {
-               padding: 0.5em 0.2em;
-               border: none;
-               border-bottom: 1px solid rgba(20, 20, 20, 0.5);
-            }
+            gap: 1rem;
             @include breakpoint(medium) {
                grid-template-columns: 1fr 1fr;
             }
+            input,
+            select {
+               padding: 0.5rem 1rem;
+               width: 100%;
+               margin-inline: auto;
+            }
          }
+         button.button {
+            text-align: center;
+            display: inline-block;
+            margin-inline: auto;
+            margin-top: 1rem;
+         }
+         // input,
+         // select {
+         //    padding: 0.5em 0.2em;
+         //    border: none;
+         //    border: 1px solid rgba(20, 20, 20, 0.5);
+         // }
+         // @include breakpoint(medium) {
+         //    grid-template-columns: 1fr 1fr;
+         // }
       }
    }
 }
