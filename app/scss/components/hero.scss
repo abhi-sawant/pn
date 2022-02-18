@@ -4,17 +4,27 @@
    display: none;
    @include breakpoint(medium) {
       display: block;
+      .slick-arrow {
+         position: absolute;
+         z-index: 111;
+         font-size: 0.5rem;
+         width: 3rem;
+         height: 3rem;
+         border-radius: 1.5rem;
+         outline: none;
+         background: rgba(0, 0, 0, 0.1);
+         border: none;
+         color: white;
+      }
+      .slick-prev {
+         left: 2%;
+         top: 45%;
+      }
+      .slick-next {
+         right: 2%;
+         top: 45%;
+      }
    }
-}
-
-.slick-arrow {
-   content: "abc";
-}
-
-.slick-prev {
-}
-
-.slick-next {
 }
 .hero-mobile {
    display: block;

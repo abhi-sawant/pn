@@ -51,7 +51,9 @@
    background: #ecedfb;
    .contact-form__container {
       max-width: 600px;
-      input, textarea {
+      input,
+      textarea,
+      select {
          margin: 1em 0;
          display: block;
          width: 100%;

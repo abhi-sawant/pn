@@ -21,8 +21,13 @@
             margin-bottom: 1em;
          }
          .button {
-            width: 50%;
+            display: inline-block;
+            // width: 50%;
             margin: auto;
+            margin-top: 1rem;
+            @include breakpoint(medium) {
+               width: 30%;
+            }
          }
       }
       @include breakpoint(medium) {

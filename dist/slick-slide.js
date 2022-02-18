@@ -1,7 +1,7 @@
 $(document).ready(function () {
    $(".hero").slick({
       dots: false,
-      arrows: false,
+      arrows: true,
       autoplay: true,
       infinite: true,
       speed: 300,

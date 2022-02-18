@@ -96,6 +96,16 @@
                transition: width 300ms;
             }
          }
+         .button {
+            color: white;
+            &:hover {
+               color: var(--blue);
+            }
+            &:hover::before,
+            &:hover::after {
+               width: 0;
+            }
+         }
          .sub-list-parent {
             color: var(--blue);
             .down-arrow {
