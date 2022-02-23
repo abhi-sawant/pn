@@ -15,6 +15,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="dist/lightbox.min.css" />
     <link rel="stylesheet" href="dist/slick.css" />
     <link rel="stylesheet" href="dist/slick-theme.css" />
     <link rel="stylesheet" href="dist/style.css" />
@@ -342,35 +343,49 @@
       </div>
       <div class="container collage-container">
         <div class="collage-image collage-image-1">
-          <img src="assets/images/collage/01.webp" alt="" data-aos="fade-up" />
+          <a href="assets/images/collage/01.webp" data-lightbox="image-1">
+            <img src="assets/images/collage/01.webp" alt="" data-aos="fade-up" />
+          </a>
         </div>
         <div class="collage-image collage-image-2">
-          <img src="assets/images/collage/02.webp" alt="" data-aos="fade-up" />
+          <a href="assets/images/collage/02.webp" data-lightbox="image-1">
+            <img src="assets/images/collage/02.webp" alt="" data-aos="fade-up" />
+          </a>
         </div>
         <div class="collage-image collage-image-3">
-          <img src="assets/images/collage/03.webp" alt="" data-aos="fade-up" />
+          <a href="assets/images/collage/03.webp" data-lightbox="image-1">
+            <img src="assets/images/collage/03.webp" alt="" data-aos="fade-up" />
+          </a>
         </div>
         <div class="collage-image collage-image-4">
-          <img src="assets/images/collage/04.webp" alt="" data-aos="fade-up" />
+          <a href="assets/images/collage/04.webp" data-lightbox="image-1">
+            <img src="assets/images/collage/04.webp" alt="" data-aos="fade-up" />
+          </a>
         </div>
         <div class="collage-image collage-image-5">
-          <img src="assets/images/collage/05.webp" alt="" data-aos="fade-up" />
+          <a href="assets/images/collage/05.webp" data-lightbox="image-1">
+            <img src="assets/images/collage/05.webp" alt="" data-aos="fade-up" />
+          </a>
         </div>
         <div class="collage-image collage-image-6">
-          <img src="assets/images/collage/06.webp" alt="" data-aos="fade-up" />
+          <a href="assets/images/collage/06.webp" data-lightbox="image-1">
+            <img src="assets/images/collage/06.webp" alt="" data-aos="fade-up" />
+          </a>
         </div>
         <div class="collage-image collage-image-7">
-          <img src="assets/images/collage/07.webp" alt="" data-aos="fade-up" />
+          <a href="assets/images/collage/07.webp" data-lightbox="image-1">
+            <img src="assets/images/collage/07.webp" alt="" data-aos="fade-up" />
+          </a>
         </div>
       </div>
     </section>
 
     <section class="registration">
       <div class="container registration__container" id="enroll">
-        <div class="registration-flex" data-aos="fade-right">
+        <!-- <div class="registration-flex" data-aos="fade-right">
           <h2 class="reg__title">Register Now</h2>
           <img src="assets/images/half-student.webp" alt="" />
-        </div>
+        </div> -->
         <form action="" class="registration-form" data-aos="fade-left">
           <h2 class="section__title">Enroll Now</h2>
           <input type="text" class="form-name" id="form-name" placeholder="Name" />
@@ -580,6 +595,8 @@
     </div>
     <script src="dist/jquery.min.js"></script>
     <script src="dist/jquery-migrate.min.js"></script>
+    <script src="dist/lightbox-plus-jquery.min.js"></script>
+
     <script src="dist/slick.min.js"></script>
     <script src="dist/slick-slide.js"></script>
     <script src="dist/aos.js"></script>
